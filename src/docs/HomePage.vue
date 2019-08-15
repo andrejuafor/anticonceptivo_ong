@@ -4,8 +4,8 @@
       <mdb-edge-header style="height: 590px;">
         <div class="home-page-background">
           <mdb-col class="input-secction" sm="6">
-            <section class="demo-section ">
-              <section>
+            <section class="demo-section">
+              <section class="form-section">
                 <p style="color: #FFFFFF; font-weight: bold; font-size: 20px;">Contáctanos</p>
                 <p>Lorem ipsum el dolore sit amet</p>
                 <div>
@@ -22,6 +22,10 @@
               </section>
             </section>
           </mdb-col>
+          <section style="background: #002B53; height: 19%; margin-top:22px;">
+            <h2 style="color: white; padding: 25px 0px 0px 50px; font-weight: bold;">Di sí al amor, pero con anticonceptivo dual</h2>
+            <p style="color: white; padding: 0px 0px 0px 50px; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          </section>
         </div>
       </mdb-edge-header>
 <!----------------------------------------------------------------------------------------------------------------->
@@ -32,45 +36,44 @@
         </mdb-col>
 <!----------------------------------------------------------------------------------------------------------------->
         <mdb-row>
-          <mdb-col md="4" class="mb-5">
-            <mdb-card class="animated fadeInLeft">
+          <mdb-col md="6" class="mb-5">
+            <mdb-card class="animated fadeInLeft" style="height: 220px;">
               <mdb-card-body>
-                <mdb-card-title><mdb-icon fab icon="css3" class="pink-text" /><strong>CONFIRMA QUE ESTAS EMBARAZADA</strong></mdb-card-title>
+                <mdb-card-title><img style="width: 8%; padding-right: 5px;" src="../../build/img/img-Marie/marie stopes landing-06.jpg"><strong style="font-size: 20px;">CONFIRMA QUE ESTAS EMBARAZADA</strong></mdb-card-title>
                 <mdb-card-text>Poniendo atención a los síntomas puedes hacer una comparación después de haber usado las pastillas. <br/><br/> Puedes confirmar con una prueba de orina de farmacia. 
                 Para mayor certeza y oara conocer la edad gestional. puedes realizar un ultrasonido.</mdb-card-text>
               </mdb-card-body>
             </mdb-card>
           </mdb-col>
-          <mdb-col md="4" class="mb-5">
-            <mdb-card class="animated fadeInRight">
+          <mdb-col md="6" class="mb-5">
+            <mdb-card class="animated fadeInRight" style="height: 220px;">
               <mdb-card-body>
-                <mdb-card-title><mdb-icon fab icon="code" class="green-text" /><strong>ASEGÚRATE DE QUE EL EMBARAZO ESTÁ DENTRO DEL ÚTERO</strong></mdb-card-title>
+                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-09.jpg"><strong style="font-size: 20px;">ASEGÚRATE DE QUE EL EMBARAZO ESTÁ DENTRO DEL ÚTERO</strong></mdb-card-title>
                 <mdb-card-text>Si además sientes dolor intenso que se concentra en un lado (bajo vientre derecho o izquierdo), 
-                  que se presenta de repente, con palpitaciones y debilidad <strong>¡requieres atención médica urgente y no puedes iniciar el proceso!</strong></mdb-card-text>
+                  que se presenta de repente, con palpitaciones y debilidad <strong style="color: #00B3E8">¡requieres atención médica urgente y no puedes iniciar el proceso!</strong></mdb-card-text>
               </mdb-card-body>
             </mdb-card>
           </mdb-col>
         </mdb-row>
-<!----------------------------------------------------------------------------------------------------------------->
         <mdb-row>
-          <mdb-col md="4" class="mb-5">
-            <mdb-card class="animated fadeInLeft" >
+          <mdb-col md="6" class="mb-5">
+            <mdb-card class="animated fadeInLeft" style="height: 220px;">
               <mdb-card-body>
-                <mdb-card-title><mdb-icon fab icon="css3" class="pink-text" /><strong>LA EDAD GESTIONAL</strong></mdb-card-title>
+                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-07.jpg"><strong style="font-size: 20px;">LA EDAD GESTIONAL</strong></mdb-card-title>
                 <mdb-card-text>¿Cuantas semanas de embarazo tienes?<br><br>Puedes calcularlo de la siguiente forma: contar los dias desde el primer día de la decha de la última menstrución,
                 el resultado en días divídelo entre 7 para conocer las semanas. Si es posible, confima con ulrasonido</mdb-card-text>
               </mdb-card-body>
             </mdb-card>
           </mdb-col>
-          <mdb-col md="4" class="mb-5">
-            <mdb-card class="animated fadeInRight">
+          <mdb-col md="6" class="mb-5">
+            <mdb-card class="animated fadeInRight" style="height: 220px;">
               <mdb-card-body>
-                <mdb-card-title><mdb-icon fab icon="code" class="green-text" /><strong>IMPORTANTE</strong></mdb-card-title>
-                <mdb-card-text><strong>¿Tienes colocado algún dispositivo intrauterino (DIU o SIU)?</strong><br>
+                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-08.jpg"><strong style="font-size: 20px;">IMPORTANTE</strong></mdb-card-title>
+                <mdb-card-text><strong style="color: #00B3E8">¿Tienes colocado algún dispositivo intrauterino (DIU o SIU)?</strong><br>
                 En caso de tener alguno, debes retirarlo antes de tomar las pastillas. <br>
-                <strong>¿Eres alérgica a la mifepristona o al misoprostol?</strong><br>
+                <strong style="color: #00B3E8">¿Eres alérgica a la mifepristona o al misoprostol?</strong><br>
                 Si eres alérgica, no las tomes y considera otra opcion para tu interrupcion. <br>
-                <strong>¿Tienes problemas de coagulación, padeces anemia severa, asma no controlada o usas corticoides?</strong><br>
+                <strong style="color: #00B3E8">¿Tienes problemas de coagulación, padeces anemia severa, asma no controlada o usas corticoides?</strong><br>
                 Para iniciar el proceso con las pastillas rquieres vigilancia médica.<br>
                 </mdb-card-text>
               </mdb-card-body>
@@ -78,66 +81,203 @@
           </mdb-col>
         </mdb-row>
 <!----------------------------------------------------------------------------------------------------------------->
+        <h2 class="text-center mt-5 font-weight-bold">CONSULTA NUESTRA INFORMACIÓN</h2>
+        <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
+          <p>Descarga nuestras guías para obtener información util de cada estatus del proceso</p>
+        </mdb-col>
+<!----------------------------------------------------------------------------------------------------------------->        
         <mdb-row>
           <mdb-col md="4" class="mb-5">
             <mdb-card v-animateOnScroll="{animation: 'fadeInLeft', delay: 400}">
-              <mdb-card-image src="https://mdbootstrap.com/wp-content/uploads/2017/06/navigation-1.jpg" alt="Card image cap"></mdb-card-image>
-              <mdb-card-body>
-                <mdb-card-title><mdb-icon icon="bars" class="pink-text" /><strong> NAVIGATION</strong></mdb-card-title>
-                <mdb-card-text>Ready-to-use navigation layouts, navbars, breadcrumbs and much more! More about our navigation components.</mdb-card-text>
-                <mdb-nav-item to="/navigation" class="float-right" anchorClass="p-0"><mdb-btn color="elegant">More</mdb-btn></mdb-nav-item>
-              </mdb-card-body>
+              <button class="buttom-process"> 
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none">
+                    </path>
+                    <g fill="#ffffff">
+                      <g id="surface1">
+                        <path d="M86,6.88c-43.65844,0 -79.12,35.46156 -79.12,79.12c0,43.65844 35.46156,79.12 79.12,79.12c43.65844,0 79.12,-35.46156 79.12,-79.12c0,-43.65844 -35.46156,-79.12 -79.12,-79.12zM86,13.76c39.93625,0 72.24,32.30375 72.24,72.24c0,39.93625 -32.30375,72.24 -72.24,72.24c-39.93625,0 -72.24,-32.30375 -72.24,-72.24c0,-39.93625 32.30375,-72.24 72.24,-72.24zM95.89,48.16c-0.76594,0.08063 -1.49156,0.43 -2.0425,0.9675l-34.4,34.4c-0.67187,0.645 -1.04812,1.54531 -1.04812,2.4725c0,0.92719 0.37625,1.8275 1.04812,2.4725l34.4,34.4c1.37063,1.37063 3.57438,1.37063 4.945,0c1.37063,-1.37062 1.37063,-3.57437 0,-4.945l-31.9275,-31.9275l31.9275,-31.9275c1.11531,-1.03469 1.41094,-2.67406 0.73906,-4.03125c-0.65844,-1.37062 -2.15,-2.12312 -3.64156,-1.88125z">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <br> 
+                Antes del proceso
+              </button>
             </mdb-card>
           </mdb-col>
           <mdb-col md="4" class="mb-5">
             <mdb-card v-animateOnScroll="{animation: 'fadeIn'}">
-              <mdb-card-image src="https://mdbootstrap.com/wp-content/uploads/2015/08/forms.jpg" alt="Card image cap"></mdb-card-image>
-              <mdb-card-body>
-                <mdb-card-title><mdb-icon icon="edit" class="blue-text" /><strong> FORMS</strong></mdb-card-title>
-                <mdb-card-text>Inputs, autocomplete, selecst, date and time pickers. Everything in one place is ready to use!</mdb-card-text>
-                <mdb-nav-item to="/forms" class="float-right" anchorClass="p-0"><mdb-btn color="elegant">More</mdb-btn></mdb-nav-item>
-              </mdb-card-body>
+              <button class="buttom-process">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 172 172" style=" fill:#000000;">
+                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#ffffff">
+                      <path d="M86,18.14063c-37.35625,0 -67.85937,30.50313 -67.85937,67.85938c0,37.35625 30.50313,67.85938 67.85938,67.85938c37.35625,0 67.85938,-30.50312 67.85938,-67.85937c0,-37.35625 -30.50312,-67.85937 -67.85937,-67.85937zM86,26.20313c32.92188,0 59.79688,26.875 59.79688,59.79688c0,32.92188 -26.875,59.79688 -59.79687,59.79688c-32.92187,0 -59.79687,-26.875 -59.79687,-59.79687c0,-32.92187 26.875,-59.79687 59.79688,-59.79687zM86,41.65625c-2.28437,0 -4.03125,1.74687 -4.03125,4.03125v33.32605c-2.41875,1.34375 -4.03125,4.0302 -4.03125,6.98645c0,4.43438 3.62812,8.0625 8.0625,8.0625c2.95625,0 5.6427,-1.6125 6.98645,-4.03125h19.88855c2.28437,0 4.03125,-1.74688 4.03125,-4.03125c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125h-19.88855c-0.67187,-1.20937 -1.74583,-2.28333 -2.9552,-2.9552v-33.32605c0,-2.28438 -1.74688,-4.03125 -4.03125,-4.03125z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <br>
+                Duaremte el proceso
+              </button>
             </mdb-card>
           </mdb-col>
           <mdb-col md="4" class="mb-5">
             <mdb-card v-animateOnScroll="{animation: 'fadeInRight', delay: 200}">
-              <mdb-card-image src="https://mdbootstrap.com/wp-content/uploads/2015/08/table-fb.jpg" alt="Card image cap"></mdb-card-image>
-              <mdb-card-body>
-                <mdb-card-title><mdb-icon icon="table" class="green-text" /><strong> TABLES</strong></mdb-card-title>
-                <mdb-card-text>Basic and advanced tables. Responsive, datatables, with sorting, searching and export to csv.</mdb-card-text>
-                <mdb-nav-item to="/tables" class="float-right" anchorClass="p-0"><mdb-btn color="elegant">More</mdb-btn></mdb-nav-item>
-              </mdb-card-body>
+              <button class="buttom-process">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none">
+                    </path>
+                    <g fill="#ffffff">
+                      <g id="surface1">
+                        <path d="M86,6.88c-43.65844,0 -79.12,35.46156 -79.12,79.12c0,43.65844 35.46156,79.12 79.12,79.12c43.65844,0 79.12,-35.46156 79.12,-79.12c0,-43.65844 -35.46156,-79.12 -79.12,-79.12zM86,13.76c39.93625,0 72.24,32.30375 72.24,72.24c0,39.93625 -32.30375,72.24 -72.24,72.24c-39.93625,0 -72.24,-32.30375 -72.24,-72.24c0,-39.93625 32.30375,-72.24 72.24,-72.24zM75.3575,48.0525c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.29,0.22844 -2.32469,1.16906 -2.6875,2.41875c-0.36281,1.26313 0.01344,2.60688 0.9675,3.49375l31.9275,31.9275l-31.9275,31.9275c-1.37062,1.37063 -1.37062,3.57438 0,4.945c1.37063,1.37063 3.57438,1.37063 4.945,0l34.4,-34.4c0.67188,-0.645 1.04813,-1.54531 1.04813,-2.4725c0,-0.92719 -0.37625,-1.8275 -1.04813,-2.4725l-34.4,-34.4c-0.71219,-0.76594 -1.74687,-1.15562 -2.795,-1.075z">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <br>
+                Después del proceso
+              </button>
             </mdb-card>
           </mdb-col>
         </mdb-row>
-        <mdb-row class="mb-4">
-          <mdb-col md="4" class="mb-5">
-            <mdb-card v-animateOnScroll="{animation: 'fadeInLeft', delay: 400}">
-              <mdb-card-image src="https://mdbootstrap.com/wp-content/uploads/2018/02/modal-new.jpg" alt="Card image cap"></mdb-card-image>
-              <mdb-card-body>
-                <mdb-card-title><mdb-icon icon="window-restore" class="pink-text" /><strong> MODALS</strong></mdb-card-title>
-                <mdb-card-text>Modals are great for displaying advanced messages to the user. Cookies, logging in, registration and much more.</mdb-card-text>
-                <mdb-nav-item to="/modals" class="float-right" anchorClass="p-0"><mdb-btn color="elegant">More</mdb-btn></mdb-nav-item>
-              </mdb-card-body>
+<!----------------------------------------------------------------------------------------------------------------->        
+        <mdb-row>
+          <mdb-col md="7" class="mb-5">
+            <h2 class="font-weight-bold">CALCULADORA DE EMBARAZO</h2>
+            <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <select class="calculator" id="year">
+                <option value="-">Día</option>
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+                <option value="1">6</option>
+                <option value="1">7</option>
+                <option value="1">8</option>
+                <option value="1">9</option>
+                <option value="1">10</option>
+                <option value="1">11</option>
+                <option value="1">12</option>
+                <option value="1">13</option>
+                <option value="1">14</option>
+                <option value="1">15</option>
+                <option value="1">16</option>
+                <option value="1">17</option>
+                <option value="1">18</option>
+                <option value="1">19</option>
+                <option value="1">20</option>
+                <option value="1">21</option>
+                <option value="1">22</option>
+                <option value="1">23</option>
+                <option value="1">24</option>
+                <option value="1">25</option>
+                <option value="1">26</option>
+                <option value="1">27</option>
+                <option value="1">28</option>
+                <option value="1">29</option>
+                <option value="1">30</option>
+                <option value="1">31</option>
+            </select>
+            <select class="calculator" id="month">
+                <option value="-">Mes</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <select class="calculator" id="year">
+                <option value="-">Año</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2018">2019</option>
+                <option value="2018">2020</option>
+                <option value="2018">2021</option>
+            </select>
+            <button class="calculato-buttom">Calcular</button>
+            <br>
+            <br>
+            <mdb-card-text>
+              <strong style="font-size: 20px; font-weight: bold;">Semanas de embarazo:</strong><strong style="color: #00B3E8; font-size: 30px; font-weight: bold;">15</strong><br>
+            </mdb-card-text>
+          </mdb-col>
+          <mdb-col md="5" class="mb-5">
+            <img style="width: 80%;" src="../../build/img/img-Marie/marie stopes landing-05.jpg">
+          </mdb-col>
+        </mdb-row>
+<!----------------------------------------------------------------------------------------------------------------->        
+        <h2 class="text-center mt-5 font-weight-bold">PREGUNTAS FRECUENTES</h2>
+        <mdb-col md="8" class="mx-auto text-center mb-5" style="font-size: 15px;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </mdb-col>
+<!----------------------------------------------------------------------------------------------------------------->        
+        <mdb-row>
+          <mdb-col md="2" class="mx-auto text-center mb-5">
+            <mdb-card>
+              <button class="buttom-question"> 
+                Generales
+              </button>
             </mdb-card>
           </mdb-col>
-          <mdb-col md="4" class="mb-5">
-            <mdb-card v-animateOnScroll="{animation: 'fadeIn'}">
-              <mdb-card-image src="https://mdbootstrap.com/img/Marketing/docs/social/main-addons.jpg" alt="Card image cap"></mdb-card-image>
-              <mdb-card-body>
-                <mdb-card-title><mdb-icon icon="plus-square" class="blue-text" /><strong> PLUGINS & ADDONS</strong></mdb-card-title>
-                <mdb-card-text>Find out more about our extended components.</mdb-card-text>
-                <mdb-nav-item to="/plugins" class="float-right" anchorClass="p-0"><mdb-btn color="elegant">More</mdb-btn></mdb-nav-item>
-              </mdb-card-body>
+          <mdb-col md="2" class="mx-auto text-center mb-5">
+            <mdb-card>
+              <button class="buttom-question">
+                Especificas
+              </button>
+            </mdb-card>
+          </mdb-col>
+          <mdb-col md="2" class="mx-auto text-center mb-5">
+            <mdb-card>
+              <button class="buttom-question">
+                Urgencia
+              </button>
             </mdb-card>
           </mdb-col>
         </mdb-row>
+<!----------------------------------------------------------------------------------------------------------------->        
+        <h2 class="text-center mt-5 font-weight-bold">¿TIENES PREGUNTAS</h2>
+        <mdb-col md="8" class="mx-auto text-center mb-5" style="font-size: 15px;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </mdb-col>
+<!----------------------------------------------------------------------------------------------------------------->        
+        <mdb-col sm="5">
+            <section>
+                  <input class="form-control" type="text" placeholder="Nombre"/><input class="form-control" type="text" placeholder="Teléfono"/>
+                  <br/>
+            </section>
+          </mdb-col>
+          <mdb-col sm="5">
+            <section>
+              <section>
+                <div>
+                  <input class="form-control form-control-lg" type="text" placeholder="Mensaje (máximo 250 caracteres)"/>
+                  <br/>
+                  <button class="send-buttom">Enviar</button>
+                </div>
+              </section>
+            </section>
+          </mdb-col>
       </mdb-container>
     </div>
 </template>
 
 <script>
-import { mdbContainer, mdbCol, mdbRow, mdbIcon, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll } from 'mdbvue';
+import { mdbContainer, mdbCol, mdbRow, mdbIcon, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll} from 'mdbvue';
 
 export default {
   name: 'HomePage',
@@ -158,10 +298,28 @@ export default {
     mdbCardText,
     mdbCardBody
   },
+  data() {
+    return {
+      panes: [
+        {
+          title: 'Collapsible Group Item #1',
+          content: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable.'
+        }, {
+          title: 'Collapsible Group Item #2',
+          content: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable.'
+        },
+        {
+          title: 'Collapsible Group Item #3',
+          content: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable.'
+        }
+      ]
+    };
+  },
   directives: {
     animateOnScroll
   }
 };
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -202,7 +360,7 @@ a {
 .home-page-background {
   width: 100%;
   height: 100%;
-  background: url('https://www.turismodeobservacion.com/media/fotografias/atardecer-en-cortegana-3123-xl.jpg') center;
+  background: url('../../build/img/img-Marie/josh-bean-tOtv6CvnJec-unsplash.jpg') center;
   background-size: cover;
 }
 
@@ -228,6 +386,62 @@ a {
   display: block;
   top: 132px;
   left: 850px;
+}
+
+.buttom-process{
+  background: #FF0000;
+  border: 0px;
+  height: 100px;
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  color: white;
+  font-weight: bold;
+}
+
+.calculator{
+  background: white;
+  padding: 10px 30px 10px 10px;
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+}
+
+.calculato-buttom{
+  width: 15%; 
+  background: #00B3E8; 
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  border: 0px solid #000000;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.buttom-question{
+  background: white;
+  border: 0px;
+  height: 40px;
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  font-weight: bold;
+}
+
+.buttom-question:hover{
+  background: #FF0000;
+  color: white;
+}
+
+.buttom-question:active{
+  background: #FF0000;
+  color: white;
+}
+
+.form-section{
+  border: #000000;
 }
 
 </style>
