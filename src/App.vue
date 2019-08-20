@@ -1,24 +1,10 @@
 <template>
   <div id="app" class="flyout">
-    <mdb-navbar id="main-navbar" class="main-navbar2" dark position="top" color="black"  scrolling :scrollingOffset="20">
-      <mdb-navbar-toggler>
-        <mdb-navbar-nav center >
-          <mdb-nav-item exact to="/"><strong>Procesos</strong></mdb-nav-item>
-          <mdb-nav-item to="/css"><strong>Calculadora del embarazo</strong></mdb-nav-item>
-          <mdb-nav-item to="/components"><strong>Preguntas frecuentas</strong></mdb-nav-item>
-        </mdb-navbar-nav>
-      </mdb-navbar-toggler>
-    </mdb-navbar>
-    <main :style="{marginTop: '60px'}">
-      <transition name="fade" mode="out-in">
+    <main>
+      <!-- <transition name="fade" mode="out-in"> -->
         <router-view></router-view>
-      </transition>
+      <!-- </transition> -->
     </main>
-    <mdb-footer color="stylish-color">
-      <p class="footer-copyright mb-0 py-3 text-center">
-        &copy; {{new Date().getFullYear()}} Copyright: <a href="https://mdbootstrap.com/docs/vue/?utm_source=DemoApp&utm_medium=MDBVue"> MDBootstrap.com</a>
-      </p>
-    </mdb-footer>
   </div>
 </template>
 
@@ -40,6 +26,9 @@ export default {
 </script>
 
 <style>
+html{
+  scroll-behavior: smooth;
+}
 .flyout {
 	display:flex;
 	flex-direction: column;
@@ -82,4 +71,5 @@ export default {
 .fade-leave-active {
   opacity: 0;
 }
+
 </style>

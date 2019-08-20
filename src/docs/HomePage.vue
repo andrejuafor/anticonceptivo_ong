@@ -1,44 +1,53 @@
 <template>
+  <div>
+    <mdb-navbar id="main-navbar" class="main-navbar2" dark position="top" color="black"  scrolling :scrollingOffset="20">
+      <mdb-navbar-toggler>
+        <mdb-navbar-nav center >
+          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('process')"><strong>Procesos</strong></a></mdb-nav-item> 
+          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('clt')"><strong>Calculadora del embarazo</strong></a></mdb-nav-item>
+          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('quest')"><strong>Preguntas frecuentas</strong></a></mdb-nav-item>
+        </mdb-navbar-nav>
+      </mdb-navbar-toggler>
+    </mdb-navbar>
+    <!-- :style="{marginTop: '60px'}" -->
     <div style="margin-top: -60px;">
-<!----------------------------------------------------------------------------------------------------------------->
-      <mdb-edge-header style="height: 590px;">
-        <div class="home-page-background">
-          <mdb-col class="input-secction" sm="6">
-            <section class="demo-section">
-              <section class="form-section">
-                <p style="color: #FFFFFF; font-weight: bold; font-size: 20px;">Contáctanos</p>
-                <p>Lorem ipsum el dolore sit amet</p>
-                <div>
-                  <input class="form-control" type="text" placeholder="Nombre"/>
-                  <br/>
-                  <input class="form-control" type="text" placeholder="Teléfono"/>
-                  <br/>
-                  <input class="form-control" type="text" placeholder="Correo electrónico"/>
-                  <br/>
-                  <input class="form-control form-control-lg" type="text" placeholder="Mensaje (máximo 250 caracteres)"/>
-                  <br/>
-                  <button class="send-buttom">Enviar</button>
-                </div>
-              </section>
-            </section>
+      <mdb-edge-header style="height: 670px;">
+        <div align="right" class="home-page-background">
+          <mdb-col align="left" class="input-secction" sm="6">
+          <form>
+            <p class="h4" style="color: white;">Contáctanos</p>
+            <p style="color: white; border-bottom: 1px solid white;">Lorem ipsum el dolore sit amet</p>
+            <input type="text" id="defaultFormContactNameEx" class="form-control" placeholder="Nombre"/>
+            <br/>
+            <input type="email" id="defaultFormContactEmailEx" class="form-control" placeholder="Teléfono"/>
+            <br/>
+            <input type="text" id="defaultFormContactSubjectEx" class="form-control" placeholder="Correo electrónico"/>
+            <br/>
+            <textarea type="text" id="defaultFormContactMessageEx" class="form-control" rows="5" placeholder="Mensaje (máximo 250 caracteres)" style="font-size: 15px;"></textarea>
+            <div class="text-center mt-4">
+              <button class="send-buttom" type="submit">Enviar</button>
+            </div>
+          </form>
+
           </mdb-col>
-          <section style="background: #002B53; height: 19%; margin-top:22px;">
-            <h2 style="color: white; padding: 25px 0px 0px 50px; font-weight: bold;">Di sí al amor, pero con anticonceptivo dual</h2>
-            <p style="color: white; padding: 0px 0px 0px 50px; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        </div>
+        <div class="blue-bar">
+          <section style="background: #002B53; height: 19%; margin-top: -110px;">
+            <h2 class="blue-bar-title">Di sí al amor, pero con anticonceptivo dual</h2>
+            <p class="blue-bar-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </section>
         </div>
       </mdb-edge-header>
-<!----------------------------------------------------------------------------------------------------------------->
       <mdb-container>
-        <h2 class="text-center mt-5 font-weight-bold">EL PROCESO</h2>
+        <h2 class="text-center mt-5 font-weight-bold fl-porto" ref="process">EL PROCESO</h2>
         <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
           <p>Antes de iniciar el proceso, considera lo siguiente</p>
         </mdb-col>
-<!----------------------------------------------------------------------------------------------------------------->
+
         <mdb-row>
           <mdb-col md="6" class="mb-5">
-            <mdb-card class="animated fadeInLeft" style="height: 220px;">
-              <mdb-card-body>
+            <mdb-card class="animated fadeInLeft card-text-content">
+              <mdb-card-body style="height: 220px;" >
                 <mdb-card-title><img style="width: 8%; padding-right: 5px;" src="../../build/img/img-Marie/marie stopes landing-06.jpg"><strong style="font-size: 20px;">CONFIRMA QUE ESTAS EMBARAZADA</strong></mdb-card-title>
                 <mdb-card-text>Poniendo atención a los síntomas puedes hacer una comparación después de haber usado las pastillas. <br/><br/> Puedes confirmar con una prueba de orina de farmacia. 
                 Para mayor certeza y oara conocer la edad gestional. puedes realizar un ultrasonido.</mdb-card-text>
@@ -46,7 +55,7 @@
             </mdb-card>
           </mdb-col>
           <mdb-col md="6" class="mb-5">
-            <mdb-card class="animated fadeInRight" style="height: 220px;">
+            <mdb-card class="animated fadeInRight card-text-content">
               <mdb-card-body>
                 <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-09.jpg"><strong style="font-size: 20px;">ASEGÚRATE DE QUE EL EMBARAZO ESTÁ DENTRO DEL ÚTERO</strong></mdb-card-title>
                 <mdb-card-text>Si además sientes dolor intenso que se concentra en un lado (bajo vientre derecho o izquierdo), 
@@ -57,7 +66,7 @@
         </mdb-row>
         <mdb-row>
           <mdb-col md="6" class="mb-5">
-            <mdb-card class="animated fadeInLeft" style="height: 220px;">
+            <mdb-card class="animated fadeInLeft card-text-content">
               <mdb-card-body>
                 <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-07.jpg"><strong style="font-size: 20px;">LA EDAD GESTIONAL</strong></mdb-card-title>
                 <mdb-card-text>¿Cuantas semanas de embarazo tienes?<br><br>Puedes calcularlo de la siguiente forma: contar los dias desde el primer día de la decha de la última menstrución,
@@ -66,7 +75,7 @@
             </mdb-card>
           </mdb-col>
           <mdb-col md="6" class="mb-5">
-            <mdb-card class="animated fadeInRight" style="height: 220px;">
+            <mdb-card class="animated fadeInRight card-text-content-extra">
               <mdb-card-body>
                 <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-08.jpg"><strong style="font-size: 20px;">IMPORTANTE</strong></mdb-card-title>
                 <mdb-card-text><strong style="color: #00B3E8">¿Tienes colocado algún dispositivo intrauterino (DIU o SIU)?</strong><br>
@@ -80,17 +89,16 @@
             </mdb-card>
           </mdb-col>
         </mdb-row>
-<!----------------------------------------------------------------------------------------------------------------->
         <h2 class="text-center mt-5 font-weight-bold">CONSULTA NUESTRA INFORMACIÓN</h2>
         <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
           <p>Descarga nuestras guías para obtener información util de cada estatus del proceso</p>
-        </mdb-col>
-<!----------------------------------------------------------------------------------------------------------------->        
+        </mdb-col> 
         <mdb-row>
+          <a name="lancha" id="lancha" class="fadeIn"></a>
           <mdb-col md="4" class="mb-5">
-            <mdb-card v-animateOnScroll="{animation: 'fadeInLeft', delay: 400}">
-              <button class="buttom-process"> 
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+            <mdb-card v-animateOnScroll="{animation: 'fadeInLeft', delay: 400}"> 
+              <mdb-btn class="buttom-process" color="#FF0000" @click.native="showModal = true">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000; padding-bottom: 5px;">
                   <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                     <path d="M0,172v-172h172v172z" fill="none">
                     </path>
@@ -102,15 +110,26 @@
                     </g>
                   </g>
                 </svg>
-                <br> 
+                <br>
                 Antes del proceso
-              </button>
+              </mdb-btn>
             </mdb-card>
+            <mdb-modal centered :show="showModal" @close="showModal = false">
+              <mdb-modal-header>
+                <mdb-modal-title>Antes del proceso</mdb-modal-title>
+              </mdb-modal-header>
+              <mdb-modal-body>
+                <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-03.jpg">
+              </mdb-modal-body>
+              <mdb-modal-footer>
+                <mdb-btn color="#FF0000" @click.native="showModal = false">Close</mdb-btn>
+              </mdb-modal-footer>
+            </mdb-modal>
           </mdb-col>
           <mdb-col md="4" class="mb-5">
-            <mdb-card v-animateOnScroll="{animation: 'fadeIn'}">
-              <button class="buttom-process">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 172 172" style=" fill:#000000;">
+            <mdb-card v-animateOnScroll="{animation: 'fadeIn', delay: 400}"> 
+              <mdb-btn class="buttom-process" color="#FF0000" @click.native="showModal2 = true">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
                   <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                     <path d="M0,172v-172h172v172z" fill="none"></path>
                     <g fill="#ffffff">
@@ -120,14 +139,25 @@
                   </g>
                 </svg>
                 <br>
-                Duaremte el proceso
-              </button>
+                Durante el proceso
+              </mdb-btn>
             </mdb-card>
+            <mdb-modal centered :show="showModal2" @close="showModal2 = false">
+              <mdb-modal-header>
+                <mdb-modal-title>Durante el proceso</mdb-modal-title>
+              </mdb-modal-header>
+              <mdb-modal-body>
+                <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-02.jpg">
+              </mdb-modal-body>
+              <mdb-modal-footer>
+                <mdb-btn color="#FF0000" @click.native="showModal2 = false">Close</mdb-btn>
+              </mdb-modal-footer>
+            </mdb-modal>
           </mdb-col>
           <mdb-col md="4" class="mb-5">
-            <mdb-card v-animateOnScroll="{animation: 'fadeInRight', delay: 200}">
-              <button class="buttom-process">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+            <mdb-card v-animateOnScroll="{animation: 'fadeInRight', delay: 400}"> 
+              <mdb-btn class="buttom-process" color="#FF0000" @click.native="showModal3 = true">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000; padding-bottom: 5px;">
                   <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
                     <path d="M0,172v-172h172v172z" fill="none">
                     </path>
@@ -141,14 +171,24 @@
                 </svg>
                 <br>
                 Después del proceso
-              </button>
+              </mdb-btn>
             </mdb-card>
+            <mdb-modal centered :show="showModal3" @close="showModal3 = false">
+              <mdb-modal-header>
+                <mdb-modal-title>Antes del proceso</mdb-modal-title>
+              </mdb-modal-header>
+              <mdb-modal-body>
+                <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-04.jpg">
+              </mdb-modal-body>
+              <mdb-modal-footer>
+                <mdb-btn color="#FF0000" @click.native="showModal3 = false">Cerrar</mdb-btn>
+              </mdb-modal-footer>
+            </mdb-modal>
           </mdb-col>
         </mdb-row>
-<!----------------------------------------------------------------------------------------------------------------->        
         <mdb-row>
           <mdb-col md="7" class="mb-5">
-            <h2 class="font-weight-bold">CALCULADORA DE EMBARAZO</h2>
+            <h2 class="font-weight-bold fl-porto" ref="clt">CALCULADORA DE EMBARAZO</h2>
             <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <select class="calculator" id="year">
                 <option value="-">Día</option>
@@ -220,64 +260,62 @@
             <img style="width: 80%;" src="../../build/img/img-Marie/marie stopes landing-05.jpg">
           </mdb-col>
         </mdb-row>
-<!----------------------------------------------------------------------------------------------------------------->        
-        <h2 class="text-center mt-5 font-weight-bold">PREGUNTAS FRECUENTES</h2>
+        
+        <h2 class="text-center mt-5 font-weight-bold fl-porto" ref="quest">PREGUNTAS FRECUENTES</h2>
         <mdb-col md="8" class="mx-auto text-center mb-5" style="font-size: 15px;">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </mdb-col>
-<!----------------------------------------------------------------------------------------------------------------->        
-        <mdb-row>
-          <mdb-col md="2" class="mx-auto text-center mb-5">
-            <mdb-card>
-              <button class="buttom-question"> 
-                Generales
-              </button>
-            </mdb-card>
-          </mdb-col>
-          <mdb-col md="2" class="mx-auto text-center mb-5">
-            <mdb-card>
-              <button class="buttom-question">
-                Especificas
-              </button>
-            </mdb-card>
-          </mdb-col>
-          <mdb-col md="2" class="mx-auto text-center mb-5">
-            <mdb-card>
-              <button class="buttom-question">
-                Urgencia
-              </button>
-            </mdb-card>
-          </mdb-col>
-        </mdb-row>
-<!----------------------------------------------------------------------------------------------------------------->        
+        
+        <mdb-accordion :panes="panes"/>
+        
         <h2 class="text-center mt-5 font-weight-bold">¿TIENES PREGUNTAS</h2>
         <mdb-col md="8" class="mx-auto text-center mb-5" style="font-size: 15px;">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </mdb-col>
-<!----------------------------------------------------------------------------------------------------------------->        
-        <mdb-col sm="5">
-            <section>
-                  <input class="form-control" type="text" placeholder="Nombre"/><input class="form-control" type="text" placeholder="Teléfono"/>
-                  <br/>
-            </section>
-          </mdb-col>
-          <mdb-col sm="5">
-            <section>
-              <section>
-                <div>
-                  <input class="form-control form-control-lg" type="text" placeholder="Mensaje (máximo 250 caracteres)"/>
-                  <br/>
-                  <button class="send-buttom">Enviar</button>
+        
+        <section class="text-center mt-5 font-weight-bold">
+          <section>
+            <form>
+              <div class="form-row">
+                <mdb-col md="6" class="form-group">
+                  <input type="text" class="form-control" placeholder="Nombre Completo">
+                </mdb-col>
+                <mdb-col md="6" class="form-group">
+                  <input type="text" class="form-control" placeholder="Correo electrónico">
+                </mdb-col>
+              </div>
+              <div class="form-group">
+                <textarea type="text" id="defaultFormContactMessageEx" class="form-control" rows="5" placeholder="Mensaje (máximo 250 caracteres)" style="font-size: 15px;"></textarea>
+                <div class="text-center mt-4">
+                  <button class="send-buttom2">Enviar</button>
                 </div>
-              </section>
-            </section>
-          </mdb-col>
+              </div>
+            </form>
+          </section>
+        </section>
       </mdb-container>
     </div>
+    <mdb-footer color="stylish-color">
+      <p class="footer-copyright mb-0 py-3 text-center">
+        Términos y condiciones de uso  
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="10" height="10" viewBox="0 0 172 172" style=" fill:#000000; margin-bottom: 2px; padding: 2px;">
+          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="none">
+            </path>
+            <g fill="#ffffff">
+              <path d="M86,165.12c-43.62952,0 -79.12,-35.49392 -79.12,-79.12c0,-43.62608 35.49048,-79.12 79.12,-79.12c43.62952,0 79.12,35.49392 79.12,79.12c0,43.62608 -35.49048,79.12 -79.12,79.12z">
+              </path>
+            </g>
+          </g>
+        </svg>
+         Politicas de privacidad
+      </p>
+    </mdb-footer>
+  </div>
 </template>
 
 <script>
-import { mdbContainer, mdbCol, mdbRow, mdbIcon, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll} from 'mdbvue';
+import { mdbContainer, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbCol, mdbRow, mdbIcon, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll, mdbAccordion} from 'mdbvue';
 
 export default {
   name: 'HomePage',
@@ -296,10 +334,19 @@ export default {
     mdbCardImage, 
     mdbCardTitle,
     mdbCardText,
-    mdbCardBody
+    mdbCardBody,
+    mdbAccordion,
+    mdbModal,
+    mdbModalHeader,
+    mdbModalTitle,
+    mdbModalBody,
+    mdbModalFooter,
   },
   data() {
     return {
+      showModal: false,
+      showModal2: false,
+      showModal3: false,
       panes: [
         {
           title: 'Collapsible Group Item #1',
@@ -309,7 +356,7 @@ export default {
           content: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable.'
         },
         {
-          title: 'Collapsible Group Item #3',
+          title: 'Collapsible #FF0000Group Item #3',
           content: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable.'
         }
       ]
@@ -317,6 +364,14 @@ export default {
   },
   directives: {
     animateOnScroll
+  },
+  methods: {
+    scrollMeTo(refName) {
+      var element = this.$refs[refName];
+      var top = element.offsetTop;
+
+      window.scrollTo(0, top);
+    }
   }
 };
 
@@ -383,9 +438,13 @@ a {
 }
 
 .input-secction{
-  display: block;
-  top: 132px;
-  left: 850px;
+    display: block;
+    top: 165px;
+    width: 325px;
+    background-color: rgba(0,0,0,.5);;
+    padding: 30px;
+    height: 505px;
+    margin-right: 100px;
 }
 
 .buttom-process{
@@ -442,6 +501,72 @@ a {
 
 .form-section{
   border: #000000;
+}
+
+.send-buttom2{
+  width: 20%; 
+  background: #00C5FF; 
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  border: 0px solid #000000;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.form-extra{
+  padding: 0% 0% 20% 1%;;
+}
+
+.blue-bar-title{
+  color: white;
+  padding: 25px 0px 0px 50px;
+  font-weight: bold;
+}
+
+.blue-bar-subtitle{
+  color: white; 
+  padding: 0px 0px 0px 50px; 
+  font-size: 15px;
+}
+
+.card-text-content{
+  height: 220px;
+}
+
+.porto-button{
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .input-secction{
+    width: 100%;
+    top: 50px;
+  }
+  .blue-bar{
+    height: 575px;
+    text-align: center;
+  }
+  .blue-bar-title{
+    padding: 10px 0px 0px 0px;
+    font-size: 25px;
+  }
+  .blue-bar-subtitle{
+    padding: 5px 0px 0px 0px;
+    font-size: 10px;
+  }
+  .calculato-buttom{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .card-text-content{
+    height: 300px;
+  }
+  .card-text-content-extra{
+    height: 350px;
+  }
 }
 
 </style>
