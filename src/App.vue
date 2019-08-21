@@ -8,23 +8,6 @@
   </div>
 </template>
 
-<script>
-import { mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbNavbarBrand, mdbFooter } from 'mdbvue';
-
-export default {
-  name: 'app',
-  components: {
-    mdbNavbar,
-    mdbNavItem,
-    mdbNavbarNav,
-    mdbNavbarToggler,
-    mdbNavbarBrand,
-    mdbFooter
-  }
-};
-
-</script>
-
 <style>
 html{
   scroll-behavior: smooth;
