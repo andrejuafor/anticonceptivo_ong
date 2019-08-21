@@ -4,7 +4,7 @@
       <mdb-navbar-toggler>
         <mdb-navbar-nav center >
           <mdb-nav-item><a class="porto-button" @click="scrollMeTo('process')"><strong>Procesos</strong></a></mdb-nav-item> 
-          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('clt')"><strong>Calculadora del embarazo</strong></a></mdb-nav-item>
+          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('calculadora-ref')"><strong>Calculadora del embarazo</strong></a></mdb-nav-item>
           <mdb-nav-item><a class="porto-button" @click="scrollMeTo('quest')"><strong>Preguntas frecuentas</strong></a></mdb-nav-item>
         </mdb-navbar-nav>
       </mdb-navbar-toggler>
@@ -187,8 +187,9 @@
           </mdb-col>
         </mdb-row>
         <mdb-row>
+          <!-- INICIA CALCILADORA -->
+          <h2 class="font-weight-bold fl-porto mt-5 calculadora-titulo" ref="calculadora-ref">CALCULADORA DE EMBARAZO</h2>
           <mdb-col md="7" class="mb-5">
-            <h2 class="font-weight-bold fl-porto" ref="clt">CALCULADORA DE EMBARAZO</h2>
             <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <select class="calculator" id="year">
                 <option value="-">Día</option>
@@ -249,6 +250,7 @@
                 <option value="2018">2020</option>
                 <option value="2018">2021</option>
             </select>
+            <br/>
             <button class="calculato-buttom">Calcular</button>
             <br>
             <br>
@@ -295,7 +297,7 @@
         </section>
       </mdb-container>
     </div>
-    <mdb-footer color="stylish-color">
+    <mdb-footer class="footer-section">
       <p class="footer-copyright mb-0 py-3 text-center">
         Términos y condiciones de uso  
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="10" height="10" viewBox="0 0 172 172" style=" fill:#000000; margin-bottom: 2px; padding: 2px;">
@@ -315,7 +317,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbCol, mdbRow, mdbIcon, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll, mdbAccordion} from 'mdbvue';
+import { mdbContainer, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbCol, mdbRow, mdbIcon, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbFooter, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll, mdbAccordion} from 'mdbvue';
 
 export default {
   name: 'HomePage',
@@ -341,6 +343,7 @@ export default {
     mdbModalTitle,
     mdbModalBody,
     mdbModalFooter,
+    mdbFooter
   },
   data() {
     return {
@@ -369,7 +372,8 @@ export default {
     scrollMeTo(refName) {
       var element = this.$refs[refName];
       var top = element.offsetTop;
-
+      console.log(top, 'HERE ARE TOP');
+      console.log(element, 'HERE ARE ELEMENT');
       window.scrollTo(0, top);
     }
   }
@@ -540,13 +544,20 @@ a {
   margin-right: 10px;
 }
 
+.footer-section{
+  background: #1f1e1e;
+  color: white;
+}
+
 @media (max-width: 767px) {
   .input-secction{
     width: 100%;
-    top: 50px;
+    top: 80px;
+    padding: 50px;
   }
   .blue-bar{
     height: 575px;
+    padding-top: 40px;
     text-align: center;
   }
   .blue-bar-title{
@@ -566,6 +577,13 @@ a {
   }
   .card-text-content-extra{
     height: 350px;
+  }
+  .calculadora-titulo{
+    padding-left: 15px;
+  }
+  .footer-section{
+  background: #1f1e1e;
+  color: white;
   }
 }
 
