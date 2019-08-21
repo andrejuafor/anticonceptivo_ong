@@ -250,7 +250,6 @@
                 <option value="2018">2020</option>
                 <option value="2018">2021</option>
             </select>
-            <br/>
             <button class="calculato-buttom">Calcular</button>
             <br>
             <br>
