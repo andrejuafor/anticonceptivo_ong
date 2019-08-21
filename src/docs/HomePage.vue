@@ -188,7 +188,7 @@
         </mdb-row>
         <mdb-row>
           <!-- INICIA CALCILADORA -->
-          <h2 class="font-weight-bold fl-porto mt-5 calculadora-titulo" ref="calculadora-ref">CALCULADORA DE EMBARAZO</h2>
+          <h2 class="font-weight-bold fl-porto mt-5 calculadora-titulo" ref="calculadora-ref" style="width: 100%;">CALCULADORA DE EMBARAZO</h2>
           <mdb-col md="7" class="mb-5">
             <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <select class="calculator" id="year">
