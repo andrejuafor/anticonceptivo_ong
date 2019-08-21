@@ -587,4 +587,42 @@ a {
   }
 }
 
+@media (max-width: 1024px) {
+  .input-secction{
+    width: 100%;
+    height: 71%;
+    top: 120px;
+    padding-top: 10px; 
+    margin-right: 30px;
+  }
+  .blue-bar{
+    height: 575px;
+    padding-top: 40px;
+    text-align: center;
+  }
+  .blue-bar-title{
+    padding: 15px 0px 0px 0px;
+  }
+  .blue-bar-subtitle{
+    padding: 0px;
+  }
+  .calculato-buttom{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .card-text-content{
+    height: 300px;
+  }
+  .card-text-content-extra{
+    height: 350px;
+  }
+  .calculadora-titulo{
+    padding-left: 15px;
+  }
+  .footer-section{
+  background: #1f1e1e;
+  color: white;
+  }
+}
+
 </style>
