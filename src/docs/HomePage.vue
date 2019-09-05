@@ -27,7 +27,7 @@
         </div>
       </mdb-edge-header>
       <mdb-container>
-        <h2 class="text-center mt-5 font-weight-bold fl-porto" ref="process">EL PROCESO</h2>
+        <h2 class="text-center mt-5 font-weight-bold fl-porto" ref="process">Interrupcion Del Embarazo</h2>
         <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
           <p>Antes de iniciar el proceso, considera lo siguiente</p>
         </mdb-col>
@@ -176,7 +176,7 @@
         </mdb-row>
         <mdb-row>
           <!-- INICIA CALCILADORA -->
-          <h2 class="font-weight-bold fl-porto mt-5 calculadora-titulo" ref="calculadora-ref" style="width: 100%;">CALCULADORA DE EMBARAZO</h2>
+          <h2 class="font-weight-bold fl-porto mt-5 calculadora-titulo" ref="calculadora-ref" style="width: 100%;">Calcula tu Tiempo de Embarazo</h2>
           <mdb-col md="7" class="mb-5">
             <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <select class="calculator"  v-model="selectedDay">
@@ -377,12 +377,12 @@ export default {
       // let days = this.selectedDay;
       // let Month = this.selectedMonth;
       // let Year = this.selectedYear;
-      let Today= {
-        day: moment().format('D'),
-        month: moment().format('M'),
-        year: moment().format('Y'),
-      };
-      this.Results = Today;
+      // let Today= {
+      //   day: moment().format('D'),
+      //   month: moment().format('M'),
+      //   year: moment().format('Y'),
+      // };
+      // this.Results = Today;
     }
   }
 };
@@ -427,7 +427,7 @@ a {
 .home-page-background {
   width: 100%;
   height: 100%;
-  background: url('../../build/img/img-Marie/josh-bean-tOtv6CvnJec-unsplash.jpg') center;
+  background: url('../../build/img/img-Marie/fondo.jpg') center;
   background-size: cover;
 }
 
