@@ -107,10 +107,72 @@
                 <mdb-modal-title>Antes del proceso</mdb-modal-title>
               </mdb-modal-header>
               <mdb-modal-body>
-                <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-03.jpg">
+                <p>
+                  <strong>ANTES DE INICIAR CON EL PROCESO, CONSIDERA LO SIGUENTE:</strong> 
+                  <br><br>
+                  <strong>1.Confirma que estás embarazada</strong>
+                  <br>
+                  ¿Cómo saber si estás embarazada?
+                  <br>
+                  <strong>Síntomas:</strong>
+                  <br><br>
+                  <li>
+                    <ul>- Retraso del periodo menstrual</ul>
+                    <ul>- Mayor sensibilidad en los senos</ul>
+                    <ul>- Náuseas y/o vómito, especialmente al despertar </ul>
+                    <ul>- Dolor de cabeza</ul>
+                    <ul>- Cansancio</ul>
+                    <ul>- Orinar con mucha frecuencia</ul>
+                  </li>
+                  <br>
+                  Poniendo atención a estos síntomas, puedes hacer una comparación después de haber usado las pastillas.
+                  <br>
+                  Puedes confirmar con una prueba de orina de farmacia. Para mayor certeza y para conocer la edad gestacional, puedes realizar un ultrasonido.
+                  <br>
+                  <br>
+                  <img src="https://img.icons8.com/metro/26/000000/checkmark.png"> Pensar en los síntomas que tienes antes de iniciar el proceso ayudará a confirmar que todo salió bien después de las pastillas.
+                  <br>
+                  <br>
+                  <strong>2. Asegúrate de que el embarazo está dentro del útero</strong>
+                  <br>
+                  <br>
+                  Si además sientes dolor intenso que se concentra en un lado (bajo vientre derecho o bajo vientre izquierdo), que se presenta de repente, con palpitaciones y debilidad ¡requieres atención médica urgente y no puedes iniciar el proceso!
+                  <br>
+                  <br>
+                  <img src="https://img.icons8.com/metro/26/000000/checkmark.png"> Confirma que NO se trate de un embarazo ectópico con un ultrasonido 
+                  <br><br>
+                  <strong>3. La edad gestacional </strong>
+                  <br> 
+                  ¿Cuántas semanas de embarazo tienes?
+                  <br><br>
+                  Puedes calcularlo de la siguiente forma: contar los días desde el primer día de la fecha de la última menstruación, el resultado en días divídelo entre siete para conocer las semanas. Si es posible, confirma con ultrasonido.
+                  <br><br>
+                  <img src="https://img.icons8.com/metro/26/000000/checkmark.png"> El uso del tratamiento se recomienda hasta la semana 9 de gestación.
+                  <br><br>
+                  <strong>4. Importante…</strong>
+                  <br><br>
+                  <strong>¿Tienes colocado algún dispositivo intrauterino (DIU o SIU)?</strong>
+                  <br>
+                  En caso de tener alguno, debes retirarlo antes de tomar las pastillas.
+                  <strong>¿Eres alérgica a la mifepristona o al misoprostol?</strong>
+                  <br>
+                  Si eres alérgica a las pastillas, no las tomes y considera otra opción para tu interrupción 
+                  <br>
+                  <strong>¿Tienes problemas de coagulación, padeces anemia severa, asma no controlada o usas corticoides?</strong>
+                  <br>
+                  Para iniciar el proceso con las pastillas requieres vigilancia médica 
+                  <br><br>
+                  <strong>Recomendación:</strong>
+                  <br>
+                  Tener un espacio seguro y cómodo para llevar a cabo tu interrupción es importante para que te sientas tranquila, procura tener un baño cerca y suficientes toallas regulares (no nocturnas) para monitorear el sangrado. Estar acompañada de alguien en quien confías y que pueda apoyarte, facilitará el proceso. 
+                  <br><br>
+                  <img src="https://img.icons8.com/metro/26/000000/checkmark.png">Identifica algún centro de salud cercano para acudir en caso de emergencia.
+                </p>
+                <!-- <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-03.jpg"> -->
               </mdb-modal-body>
               <mdb-modal-footer>
-                <mdb-btn color="#FF0000" @click.native="showModal = false">Close</mdb-btn>
+                <mdb-btn color="green">Descargar</mdb-btn>
+                <mdb-btn color="#FF0000" @click.native="showModal = false">Cerrar</mdb-btn>
               </mdb-modal-footer>
             </mdb-modal>
           </mdb-col>
@@ -239,7 +301,7 @@
                 <option value="2018">2020</option>
                 <option value="2018">2021</option>
             </select>
-            <button class="calculato-buttom">Calcular</button>
+            <button class="calculato-buttom" @click="calculator()">Calcular</button>
             <br>
             <br>
             <mdb-card-text>
@@ -336,10 +398,6 @@ export default {
   },
   data() {
     return {
-      value: '',
-      options: [`${moment().format('MMMM')}`, `${moment().add(1, 'days')
-        .format('MMMM')}`, `${moment().add(2, 'months')
-        .format('MMMM')}`],
       selectedDay: '',
       selectedMonth: '',
       selectedYear: '',
@@ -374,7 +432,7 @@ export default {
       window.scrollTo(0, top);
     },
     calculator(){
-      // let days = this.selectedDay;
+      let day = this.selectedDay;
       // let Month = this.selectedMonth;
       // let Year = this.selectedYear;
       // let Today= {
@@ -382,7 +440,8 @@ export default {
       //   month: moment().format('M'),
       //   year: moment().format('Y'),
       // };
-      // this.Results = Today;
+
+      this.Results = moment(day, 'D').toDate() + 'YES';
     }
   }
 };
