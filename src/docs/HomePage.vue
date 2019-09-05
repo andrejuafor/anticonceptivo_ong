@@ -1,6 +1,9 @@
 <template>
   <div>
     <mdb-navbar id="main-navbar" class="main-navbar2" dark position="top" color="black"  scrolling :scrollingOffset="20">
+      <mdb-navbar-brand to="/" waves class="font-weight-bold">
+        <img class="header-logo-navbar" src="../../build/img/img-Marie/logo_page.png">
+      </mdb-navbar-brand>
       <mdb-navbar-toggler>
         <mdb-navbar-nav center >
           <mdb-nav-item><a class="porto-button" @click="scrollMeTo('process')"><strong>Interrupcion Del Embarazo</strong></a></mdb-nav-item> 
@@ -488,6 +491,10 @@ a {
   height: 100%;
   background: url('../../build/img/img-Marie/fondo.jpg') center;
   background-size: cover;
+}
+.header-logo-navbar{
+  max-width: 200px;
+  width: 100%;
 }
 
 .send-buttom{
