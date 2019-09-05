@@ -3,8 +3,8 @@
     <mdb-navbar id="main-navbar" class="main-navbar2" dark position="top" color="black"  scrolling :scrollingOffset="20">
       <mdb-navbar-toggler>
         <mdb-navbar-nav center >
-          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('process')"><strong>Procesos</strong></a></mdb-nav-item> 
-          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('calculadora-ref')"><strong>Calculadora del embarazo</strong></a></mdb-nav-item>
+          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('process')"><strong>Interrupcion Del Embarazo</strong></a></mdb-nav-item> 
+          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('calculadora-ref')"><strong>Calcula tu Tiempo de Embarazo</strong></a></mdb-nav-item>
           <mdb-nav-item><a class="porto-button" @click="scrollMeTo('quest')"><strong>Preguntas frecuentas</strong></a></mdb-nav-item>
         </mdb-navbar-nav>
       </mdb-navbar-toggler>
@@ -14,21 +14,9 @@
       <mdb-edge-header style="height: 670px;">
         <div align="right" class="home-page-background">
           <mdb-col align="left" class="input-secction" sm="6">
-          <form>
             <p class="h4" style="color: white;">Contáctanos</p>
-            <p style="color: white; border-bottom: 1px solid white;">Lorem ipsum el dolore sit amet</p>
-            <input type="text" id="defaultFormContactNameEx" class="form-control" placeholder="Nombre"/>
-            <br/>
-            <input type="email" id="defaultFormContactEmailEx" class="form-control" placeholder="Teléfono"/>
-            <br/>
-            <input type="text" id="defaultFormContactSubjectEx" class="form-control" placeholder="Correo electrónico"/>
-            <br/>
-            <textarea type="text" id="defaultFormContactMessageEx" class="form-control" rows="5" placeholder="Mensaje (máximo 250 caracteres)" style="font-size: 15px;"></textarea>
-            <div class="text-center mt-4">
-              <button class="send-buttom" type="submit">Enviar</button>
-            </div>
-          </form>
-
+            <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon.png">
+            <p class="phone-number">5614737334</p>
           </mdb-col>
         </div>
         <div class="blue-bar">
@@ -191,56 +179,57 @@
           <h2 class="font-weight-bold fl-porto mt-5 calculadora-titulo" ref="calculadora-ref" style="width: 100%;">CALCULADORA DE EMBARAZO</h2>
           <mdb-col md="7" class="mb-5">
             <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <select class="calculator" id="year">
+            <select class="calculator"  v-model="selectedDay">
                 <option value="-">Día</option>
                 <option value="1">1</option>
-                <option value="1">2</option>
-                <option value="1">3</option>
-                <option value="1">4</option>
-                <option value="1">5</option>
-                <option value="1">6</option>
-                <option value="1">7</option>
-                <option value="1">8</option>
-                <option value="1">9</option>
-                <option value="1">10</option>
-                <option value="1">11</option>
-                <option value="1">12</option>
-                <option value="1">13</option>
-                <option value="1">14</option>
-                <option value="1">15</option>
-                <option value="1">16</option>
-                <option value="1">17</option>
-                <option value="1">18</option>
-                <option value="1">19</option>
-                <option value="1">20</option>
-                <option value="1">21</option>
-                <option value="1">22</option>
-                <option value="1">23</option>
-                <option value="1">24</option>
-                <option value="1">25</option>
-                <option value="1">26</option>
-                <option value="1">27</option>
-                <option value="1">28</option>
-                <option value="1">29</option>
-                <option value="1">30</option>
-                <option value="1">31</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
             </select>
-            <select class="calculator" id="month">
+            <select class="calculator" v-model="selectedMonth">
                 <option value="-">Mes</option>
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre
+                </option>
             </select>
-            <select class="calculator" id="year">
+            <select class="calculator" v-model="selectedYear">
                 <option value="-">Año</option>
                 <option value="2015">2015</option>
                 <option value="2016">2016</option>
@@ -254,7 +243,7 @@
             <br>
             <br>
             <mdb-card-text>
-              <strong style="font-size: 20px; font-weight: bold;">Semanas de embarazo:</strong><strong style="color: #00B3E8; font-size: 30px; font-weight: bold;">15</strong><br>
+              <strong style="font-size: 20px; font-weight: bold;">Semanas de embarazo:</strong><strong style="color: #00B3E8; font-size: 30px; font-weight: bold;">{{Results}}</strong><br>
             </mdb-card-text>
           </mdb-col>
           <mdb-col md="5" class="mb-5">
@@ -269,7 +258,7 @@
         
         <mdb-accordion :panes="panes"/>
         
-        <h2 class="text-center mt-5 font-weight-bold">¿TIENES PREGUNTAS</h2>
+        <!-- <h2 class="text-center mt-5 font-weight-bold">¿TIENES PREGUNTAS</h2>
         <mdb-col md="8" class="mx-auto text-center mb-5" style="font-size: 15px;">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </mdb-col>
@@ -293,7 +282,7 @@
               </div>
             </form>
           </section>
-        </section>
+        </section> -->
       </mdb-container>
     </div>
     <mdb-footer class="footer-section">
@@ -317,6 +306,7 @@
 
 <script>
 import { mdbContainer, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbCol, mdbRow, mdbIcon, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbFooter, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll, mdbAccordion} from 'mdbvue';
+import moment from 'moment';
 
 export default {
   name: 'HomePage',
@@ -346,6 +336,14 @@ export default {
   },
   data() {
     return {
+      value: '',
+      options: [`${moment().format('MMMM')}`, `${moment().add(1, 'days')
+        .format('MMMM')}`, `${moment().add(2, 'months')
+        .format('MMMM')}`],
+      selectedDay: '',
+      selectedMonth: '',
+      selectedYear: '',
+      Results: '',
       showModal: false,
       showModal2: false,
       showModal3: false,
@@ -374,6 +372,17 @@ export default {
       console.log(top, 'HERE ARE TOP');
       console.log(element, 'HERE ARE ELEMENT');
       window.scrollTo(0, top);
+    },
+    calculator(){
+      // let days = this.selectedDay;
+      // let Month = this.selectedMonth;
+      // let Year = this.selectedYear;
+      let Today= {
+        day: moment().format('D'),
+        month: moment().format('M'),
+        year: moment().format('Y'),
+      };
+      this.Results = Today;
     }
   }
 };
@@ -438,6 +447,18 @@ a {
   width: 50%;
   height: 80%;
   background: #000000;
+}
+
+.whats-icon{
+  width: 100%;
+  margin-top: 25px;
+}
+
+.phone-number{
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 75px 0px 0px 70px;
 }
 
 .input-secction{
@@ -621,6 +642,10 @@ a {
   .footer-section{
   background: #1f1e1e;
   color: white;
+  }
+  .phone-number{
+    font-size: 45px;
+    margin: 30px 0px 0px 10px;
   }
 }
 
