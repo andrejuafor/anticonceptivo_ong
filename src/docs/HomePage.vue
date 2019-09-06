@@ -394,11 +394,6 @@ export default {
       if (this.selectedDay !== '' && this.selectedMonth !== '' && this.selectedYear !== ''){
         let fechaSel = moment(`${this.selectedYear}-${this.selectedMonth}-${this.selectedDay}`, 'YYYY-MM-DD');
         let fechaValida = fechaSel.isValid();
-        // console.log(fechaValida);
-        // console.log(fechaSel);
-        // let diferencia = ahora.diff(fechaSel, 'weeks');
-        // this.Results = `${diferencia}`;
-        // this.Results = fechaValida;
         if (fechaValida === false){
           this.Results = 'Debes seleccionar una fecha válida.';  
         } else {
