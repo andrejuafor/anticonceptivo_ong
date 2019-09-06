@@ -244,71 +244,24 @@
           <h2 class="font-weight-bold fl-porto mt-5 calculadora-titulo" ref="calculadora-ref" style="width: 100%;">Calcula tu Tiempo de Embarazo</h2>
           <mdb-col md="7" class="mb-5">
             <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <select class="calculator"  v-model="selectedDay">
-                <option value="-">Día</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
+            <select class="calculator" v-model="selectedDay">
+              <option value="">Día</option>
+              <option v-for="option in optionsDays" v-bind:key="option.value">{{option.text}}</option>
             </select>
             <select class="calculator" v-model="selectedMonth">
-                <option value="-">Mes</option>
-                <option value="Enero">Enero</option>
-                <option value="Febrero">Febrero</option>
-                <option value="Marzo">Marzo</option>
-                <option value="Abril">Abril</option>
-                <option value="Mayo">Mayo</option>
-                <option value="Junio">Junio</option>
-                <option value="Julio">Julio</option>
-                <option value="Agosto">Agosto</option>
-                <option value="Septiembre">Septiembre</option>
-                <option value="Octubre">Octubre</option>
-                <option value="Noviembre">Noviembre</option>
-                <option value="Diciembre">Diciembre
-                </option>
+                <option value="">Mes</option>
+                <option v-for="option in optionsMonth" v-bind:key="option.valor">{{option.valor}}</option>
             </select>
             <select class="calculator" v-model="selectedYear">
-                <option value="-">Año</option>
-                <option value="2015">2015</option>
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2018">2019</option>
-                <option value="2018">2020</option>
-                <option value="2018">2021</option>
+                <option value="">Año</option>
+                <option v-for="option in optionsYear" v-bind:key="option.value">{{option.text}}</option>
             </select>
             <button class="calculato-buttom" @click="calculator()">Calcular</button>
             <br>
             <br>
             <mdb-card-text>
-              <strong style="font-size: 20px; font-weight: bold;">Semanas de embarazo:</strong><strong style="color: #00B3E8; font-size: 30px; font-weight: bold;">{{Results}}</strong><br>
+              <strong style="font-size: 20px; font-weight: bold;">Semanas de embarazo:</strong>
+              <strong style="color: #00B3E8; font-size: 30px; font-weight: bold;">{{Results}}</strong><br>
             </mdb-card-text>
           </mdb-col>
           <mdb-col md="5" class="mb-5">
@@ -320,34 +273,7 @@
         <mdb-col md="8" class="mx-auto text-center mb-5" style="font-size: 15px;">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </mdb-col>
-        
         <mdb-accordion :panes="panes"/>
-        
-        <!-- <h2 class="text-center mt-5 font-weight-bold">¿TIENES PREGUNTAS</h2>
-        <mdb-col md="8" class="mx-auto text-center mb-5" style="font-size: 15px;">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </mdb-col>
-        
-        <section class="text-center mt-5 font-weight-bold">
-          <section>
-            <form>
-              <div class="form-row">
-                <mdb-col md="6" class="form-group">
-                  <input type="text" class="form-control" placeholder="Nombre Completo">
-                </mdb-col>
-                <mdb-col md="6" class="form-group">
-                  <input type="text" class="form-control" placeholder="Correo electrónico">
-                </mdb-col>
-              </div>
-              <div class="form-group">
-                <textarea type="text" id="defaultFormContactMessageEx" class="form-control" rows="5" placeholder="Mensaje (máximo 250 caracteres)" style="font-size: 15px;"></textarea>
-                <div class="text-center mt-4">
-                  <button class="send-buttom2">Enviar</button>
-                </div>
-              </div>
-            </form>
-          </section>
-        </section> -->
       </mdb-container>
     </div>
     <mdb-footer class="footer-section">
@@ -370,7 +296,7 @@
 </template>
 
 <script>
-import { mdbContainer, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbCol, mdbRow, mdbIcon, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbFooter, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll, mdbAccordion} from 'mdbvue';
+import { mdbContainer, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbCol, mdbRow, mdbIcon, mdbNavbarBrand, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbFooter, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll, mdbAccordion} from 'mdbvue';
 import moment from 'moment';
 
 export default {
@@ -380,6 +306,7 @@ export default {
     mdbCol,
     mdbRow,
     mdbIcon,
+    mdbNavbarBrand,
     mdbNavbar,
     mdbNavItem,
     mdbNavbarNav,
@@ -401,9 +328,13 @@ export default {
   },
   data() {
     return {
+      optionsDays:[],
+      optionsMonth:[],
+      optionsYear:[],
       selectedDay: '',
       selectedMonth: '',
       selectedYear: '',
+      diasMes: 31,
       Results: '',
       showModal: false,
       showModal2: false,
@@ -426,25 +357,58 @@ export default {
   directives: {
     animateOnScroll
   },
+  created(){
+    for (let i=1; i<=31; i++) {
+      this.optionsDays.push({ text:i, value:i});
+    }
+    this.optionsMonth = [
+      {text:'Enero', valor: '01'},
+      {text:'Febrero', valor: '02'},
+      {text:'Marzo', valor: '03'},
+      {text:'Abril', valor: '04'},
+      {text:'Mayo', valor: '05'},
+      {text:'Junio', valor: '06'},
+      {text:'Julio', valor: '07'},
+      {text:'Agosto', valor: '08'},
+      {text:'Septiembre', valor: '09'},
+      {text:'Octubre', valor: '10'},
+      {text:'Noviembre', valor: '11'},
+      {text:'Diciembre', valor: '12'}
+    ];
+    // let ahora = moment().format('YYYY-MM-DD');
+    let diferenciaMeses = moment().subtract(9, 'months')
+      .format('YYYY');
+    let anioActual = moment().format('YYYY');
+    if (diferenciaMeses < anioActual){
+      this.optionsYear.push({text:diferenciaMeses, value:diferenciaMeses});
+    }
+    this.optionsYear.push({text:anioActual, value:anioActual});
+  },
   methods: {
     scrollMeTo(refName) {
       var element = this.$refs[refName];
       var top = element.offsetTop;
-      console.log(top, 'HERE ARE TOP');
-      console.log(element, 'HERE ARE ELEMENT');
       window.scrollTo(0, top);
     },
     calculator(){
-      let day = this.selectedDay;
-      // let Month = this.selectedMonth;
-      // let Year = this.selectedYear;
-      // let Today= {
-      //   day: moment().format('D'),
-      //   month: moment().format('M'),
-      //   year: moment().format('Y'),
-      // };
-
-      this.Results = moment(day, 'D').toDate() + 'YES';
+      if (this.selectedDay !== '' && this.selectedMonth !== '' && this.selectedYear !== ''){
+        let fechaSel = moment(`${this.selectedYear}-${this.selectedMonth}-${this.selectedDay}`, 'YYYY-MM-DD');
+        let fechaValida = fechaSel.isValid();
+        // console.log(fechaValida);
+        // console.log(fechaSel);
+        // let diferencia = ahora.diff(fechaSel, 'weeks');
+        // this.Results = `${diferencia}`;
+        // this.Results = fechaValida;
+        if (fechaValida === false){
+          this.Results = 'Debes seleccionar una fecha válida.';  
+        } else {
+          let ahora = moment();
+          let diferencia = ahora.diff(fechaSel, 'weeks');
+          this.Results = `${diferencia}`;
+        }
+      } else {
+        this.Results = 'Debes seleccionar una fecha válida.';
+      }
     }
   }
 };
