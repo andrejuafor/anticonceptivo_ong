@@ -17,7 +17,7 @@
       <mdb-edge-header style="height: 670px;">
         <div align="right" class="home-page-background">
           <mdb-col align="left" class="input-secction" sm="6">
-            <p class="h4" style="color: white;">Contáctanos</p>
+            <p class="h5 contact-title" style="color: white;">Contáctanos</p>
             <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon.png">
             <p class="phone-number">5614737334</p>
           </mdb-col>
@@ -86,28 +86,73 @@
         </mdb-col> 
         <mdb-row>
           <a name="lancha" id="lancha" class="fadeIn"></a>
-          <mdb-col md="4" class="mb-5">
+          <mdb-col md="3" class="mb-5">
+            <mdb-card v-animateOnScroll="{animation: 'fadeInLeft', delay: 400}"> 
+              <mdb-btn class="buttom-process" color="#FF0000" @click.native="showModal4 = true">
+                <mdb-icon icon="tablets" class="fa-3x tablets-icon"/>
+                <br>
+                MIFE + MISO
+              </mdb-btn>
+            </mdb-card>
+            <mdb-modal centered :show="showModal4" @close="showModal4 = false">
+              <mdb-modal-header>
+                <mdb-modal-title>MIFE + MISO</mdb-modal-title>
+              </mdb-modal-header>
+              <mdb-modal-body>
+                <p>
+                  <strong>INTERRUPCIÓN SEGURA DEL EMBARAZO CON PASTILLAS</strong>
+                  <br><br>
+                  <strong>¿Sabías qué..?</strong>
+                  <br><br>
+                  El aborto con pastillas es un proceso. Al ser casi idéntico al aborto espontaneo, es más natural y menos invasivo. No se trata de un procedimiento, la finalidad de este proceso es interrumpir el embarazo y no vaciar el útero al momento de usar las pastillas, el útero se irá vaciando al paso de los días.
+                  <br><br>
+                  <strong>Además…</strong>
+                  <br><br>
+                  La Organización Mundial de la Salud dice que usar las pastillas en casa, es una opción segura para las mujeres que necesitan interrumpir su embarazo.
+                  <br><br>
+                  <strong>Tratamiento de mifepristona + misoprostol:</strong>
+                  <br>
+                  El uso combinado de los medicamentos hará tu proceso más rápido, más eficaz y con menos efectos secundarios.
+                  <br><br>
+                  <strong>Sobre las pastillas……</strong>
+                  <br><br>
+                  <strong>¿Por qué son dos medicamentos 1 pastilla de mifepristona y sólo 4 pastillas de misoprostol?</strong>
+                  <br><br>
+                  La mifepristona potencializa los efectos del misoprostol y hace el proceso 3 veces más efectivo. Por lo tanto, necesitas 1 pastilla de mifepristona y solo 4 pastillas de misoprostol para iniciar tu proceso de interrupción.
+                  <br><br>
+                  <strong>¿Cómo saber que las pastillas están en buenas condiciones?</strong>
+                  <br>
+                  Revisa lo siguiente:
+                  <li>
+                    <ul><mdb-icon icon="circle" class="fa-xs"/> Que la fecha de caducidad sea menor a 2 años.</ul>
+                    <ul><mdb-icon icon="circle" class="fa-xs"/> Que la caja se encuentre cerrada</ul>
+                    <ul><mdb-icon icon="circle" class="fa-xs"/> Que el empaque (la lámina de aluminio en la que se encuentran encapsuladas las pastillas) cubra por ambos lados cada tableta.</ul>
+                    <ul><mdb-icon icon="circle" class="fa-xs"/> Que estén en un lugar fresco.</ul>
+                  </li>                                           
+                  <br><br>
+                  <strong>¿Qué tan efectiva es esta opción?</strong>
+                  <br>
+                  El uso combinado de MIFEPRISTONA + MISOPROSTOL es el tratamiento reconocido por la Organización Mundial de la Salud como el “estándar de oro” por el alto porcentaje de efectividad que tiene para que las mujeres puedan interrumpir su embarazo de forma segura. La probabilidad de falla del tratamiento combinado (mife + miso) es de 5 en 100, mientras que la de misoprostol solo es de 15 en 100.
+                </p>
+                <!-- <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-03.jpg"> -->
+              </mdb-modal-body>
+              <mdb-modal-footer>
+                <mdb-btn color="green">Descargar</mdb-btn>
+                <mdb-btn color="#FF0000" @click.native="showModal4 = false">Cerrar</mdb-btn>
+              </mdb-modal-footer>
+            </mdb-modal>
+          </mdb-col>
+          <mdb-col md="3" class="mb-5">
             <mdb-card v-animateOnScroll="{animation: 'fadeInLeft', delay: 400}"> 
               <mdb-btn class="buttom-process" color="#FF0000" @click.native="showModal = true">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000; padding-bottom: 5px;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none">
-                    </path>
-                    <g fill="#ffffff">
-                      <g id="surface1">
-                        <path d="M86,6.88c-43.65844,0 -79.12,35.46156 -79.12,79.12c0,43.65844 35.46156,79.12 79.12,79.12c43.65844,0 79.12,-35.46156 79.12,-79.12c0,-43.65844 -35.46156,-79.12 -79.12,-79.12zM86,13.76c39.93625,0 72.24,32.30375 72.24,72.24c0,39.93625 -32.30375,72.24 -72.24,72.24c-39.93625,0 -72.24,-32.30375 -72.24,-72.24c0,-39.93625 32.30375,-72.24 72.24,-72.24zM95.89,48.16c-0.76594,0.08063 -1.49156,0.43 -2.0425,0.9675l-34.4,34.4c-0.67187,0.645 -1.04812,1.54531 -1.04812,2.4725c0,0.92719 0.37625,1.8275 1.04812,2.4725l34.4,34.4c1.37063,1.37063 3.57438,1.37063 4.945,0c1.37063,-1.37062 1.37063,-3.57437 0,-4.945l-31.9275,-31.9275l31.9275,-31.9275c1.11531,-1.03469 1.41094,-2.67406 0.73906,-4.03125c-0.65844,-1.37062 -2.15,-2.12312 -3.64156,-1.88125z">
-                        </path>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
+                <mdb-icon icon="chevron-circle-left" class="fa-3x before-icon"/>
                 <br>
-                Antes del proceso
+                ANTES DEL PROCESO
               </mdb-btn>
             </mdb-card>
             <mdb-modal centered :show="showModal" @close="showModal = false">
               <mdb-modal-header>
-                <mdb-modal-title>Antes del proceso</mdb-modal-title>
+                <mdb-modal-title>ANTES DEL PROCESO</mdb-modal-title>
               </mdb-modal-header>
               <mdb-modal-body>
                 <p>
@@ -120,12 +165,12 @@
                   <strong>Síntomas:</strong>
                   <br><br>
                   <li>
-                    <ul>- Retraso del periodo menstrual</ul>
-                    <ul>- Mayor sensibilidad en los senos</ul>
-                    <ul>- Náuseas y/o vómito, especialmente al despertar </ul>
-                    <ul>- Dolor de cabeza</ul>
-                    <ul>- Cansancio</ul>
-                    <ul>- Orinar con mucha frecuencia</ul>
+                    <ul><mdb-icon icon="circle" class="fa-xs"/> Retraso del periodo menstrual</ul>
+                    <ul><mdb-icon icon="circle" class="fa-xs"/> Mayor sensibilidad en los senos</ul>
+                    <ul><mdb-icon icon="circle" class="fa-xs"/> Náuseas y/o vómito, especialmente al despertar </ul>
+                    <ul><mdb-icon icon="circle" class="fa-xs"/> Dolor de cabeza</ul>
+                    <ul><mdb-icon icon="circle" class="fa-xs"/> Cansancio</ul>
+                    <ul><mdb-icon icon="circle" class="fa-xs"/> Orinar con mucha frecuencia</ul>
                   </li>
                   <br>
                   Poniendo atención a estos síntomas, puedes hacer una comparación después de haber usado las pastillas.
@@ -133,7 +178,7 @@
                   Puedes confirmar con una prueba de orina de farmacia. Para mayor certeza y para conocer la edad gestacional, puedes realizar un ultrasonido.
                   <br>
                   <br>
-                  <img src="https://img.icons8.com/metro/26/000000/checkmark.png"> Pensar en los síntomas que tienes antes de iniciar el proceso ayudará a confirmar que todo salió bien después de las pastillas.
+                  <mdb-icon icon="check" class="fa-sm"/> Pensar en los síntomas que tienes antes de iniciar el proceso ayudará a confirmar que todo salió bien después de las pastillas.
                   <br>
                   <br>
                   <strong>2. Asegúrate de que el embarazo está dentro del útero</strong>
@@ -142,7 +187,7 @@
                   Si además sientes dolor intenso que se concentra en un lado (bajo vientre derecho o bajo vientre izquierdo), que se presenta de repente, con palpitaciones y debilidad ¡requieres atención médica urgente y no puedes iniciar el proceso!
                   <br>
                   <br>
-                  <img src="https://img.icons8.com/metro/26/000000/checkmark.png"> Confirma que NO se trate de un embarazo ectópico con un ultrasonido 
+                  <mdb-icon icon="check" class="fa-sm"/> Confirma que NO se trate de un embarazo ectópico con un ultrasonido 
                   <br><br>
                   <strong>3. La edad gestacional </strong>
                   <br> 
@@ -150,7 +195,7 @@
                   <br><br>
                   Puedes calcularlo de la siguiente forma: contar los días desde el primer día de la fecha de la última menstruación, el resultado en días divídelo entre siete para conocer las semanas. Si es posible, confirma con ultrasonido.
                   <br><br>
-                  <img src="https://img.icons8.com/metro/26/000000/checkmark.png"> El uso del tratamiento se recomienda hasta la semana 9 de gestación.
+                  <mdb-icon icon="check" class="fa-sm"/> El uso del tratamiento se recomienda hasta la semana 9 de gestación.
                   <br><br>
                   <strong>4. Importante…</strong>
                   <br><br>
@@ -169,7 +214,7 @@
                   <br>
                   Tener un espacio seguro y cómodo para llevar a cabo tu interrupción es importante para que te sientas tranquila, procura tener un baño cerca y suficientes toallas regulares (no nocturnas) para monitorear el sangrado. Estar acompañada de alguien en quien confías y que pueda apoyarte, facilitará el proceso. 
                   <br><br>
-                  <img src="https://img.icons8.com/metro/26/000000/checkmark.png">Identifica algún centro de salud cercano para acudir en caso de emergencia.
+                  <mdb-icon icon="check" class="fa-sm"/> Identifica algún centro de salud cercano para acudir en caso de emergencia.
                 </p>
                 <!-- <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-03.jpg"> -->
               </mdb-modal-body>
@@ -179,18 +224,10 @@
               </mdb-modal-footer>
             </mdb-modal>
           </mdb-col>
-          <mdb-col md="4" class="mb-5">
-            <mdb-card v-animateOnScroll="{animation: 'fadeIn', delay: 400}"> 
+          <mdb-col md="3" class="mb-5">
+            <mdb-card v-animateOnScroll="{animation: 'fadeInRight', delay: 400}"> 
               <mdb-btn class="buttom-process" color="#FF0000" @click.native="showModal2 = true">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                    <g fill="#ffffff">
-                      <path d="M86,18.14063c-37.35625,0 -67.85937,30.50313 -67.85937,67.85938c0,37.35625 30.50313,67.85938 67.85938,67.85938c37.35625,0 67.85938,-30.50312 67.85938,-67.85937c0,-37.35625 -30.50312,-67.85937 -67.85937,-67.85937zM86,26.20313c32.92188,0 59.79688,26.875 59.79688,59.79688c0,32.92188 -26.875,59.79688 -59.79687,59.79688c-32.92187,0 -59.79687,-26.875 -59.79687,-59.79687c0,-32.92187 26.875,-59.79687 59.79688,-59.79687zM86,41.65625c-2.28437,0 -4.03125,1.74687 -4.03125,4.03125v33.32605c-2.41875,1.34375 -4.03125,4.0302 -4.03125,6.98645c0,4.43438 3.62812,8.0625 8.0625,8.0625c2.95625,0 5.6427,-1.6125 6.98645,-4.03125h19.88855c2.28437,0 4.03125,-1.74688 4.03125,-4.03125c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125h-19.88855c-0.67187,-1.20937 -1.74583,-2.28333 -2.9552,-2.9552v-33.32605c0,-2.28438 -1.74688,-4.03125 -4.03125,-4.03125z">
-                      </path>
-                    </g>
-                  </g>
-                </svg>
+                <mdb-icon far icon="clock" class="fa-3x clock-icon"/>
                 <br>
                 Durante el proceso
               </mdb-btn>
@@ -200,28 +237,59 @@
                 <mdb-modal-title>Durante el proceso</mdb-modal-title>
               </mdb-modal-header>
               <mdb-modal-body>
-                <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-02.jpg">
+                <p>
+                  <strong>Durante el proceso:</strong> 
+                  <br><br>
+                  <strong>¿Cómo tomar las pastillas?</strong>
+                  <br><br>
+                  Tragar una pastilla de MIFEPRISTONA con agua, esta pastilla no produce molestia, pero puede llegar a aparecer un leve sangrado
+                  <br><br>
+                  Una hora antes de colocar el misoprostol, traga con agua 2 pastillas de IBUPROFENO de 400mg.
+                  <br><br>
+                  El ibuprofeno ayudará a reducir las molestias que pudieran presentarse con el misoprostol, síguelo tomando por 5 días cada 8 horas. El ibuprofeno no afecta el proceso de interrupción, sólo ayuda a disminuir la molestia, es importante que lo tomes con mínimo una hora de anticipación para que pueda absorberse y su efecto analgésico comience antes de que se presenten las molestias.
+                  <br><br>
+                  En un lapso de 24 a 48 hrs después de tomar la mifepristona, coloca 4 pastillas de MISOPROSTOL, dos entre el cachete y la encía superior derecha y dos entre el cachete y la encía superior izquierda, deja pasar 30 minutos.
+                  <br><br>
+                  Puedes pasar la saliva de forma normal pero sin tragar las pastillas. Cuando pasen los 30 minutos, si aún quedan restos de las pastillas, puedes pasarlos con agua.
+                  <br><br>
+                  <strong>¿Qué voy a sentir?</strong> 
+                  <br><br>
+                  A partir de la primera media hora presentarás sangrado y cólico. Puede que también se presenten: escalofríos, mareo, náuseas, vómito, diarrea, y/o fiebre pasajera. Estos últimos no se presentan siempre, y puede o no que aparezcan, pero en caso de que los llegaras a experimentar no debes alarmarte, son pasajeros y se quitan solos por completo. No es necesario tomar otro medicamento.
+                  <br><br>
+                  <strong>¿Qué tanto duele?</strong>
+                  <br><br>
+                  El cuerpo de cada mujer es diferente, por lo que, al igual que el sangrado, no existe una intensidad definida para el dolor. El ibuprofeno ayudará a controlar las molestias. También puedes ayudarte de compresas calientes en el vientre y espalda baja.
+                  <br><br>
+                  <strong>¿Qué tanto tengo que sangrar?</strong>
+                  <br><br>
+                  Las primeras horas después de haber colocado el misoprostol se presentará la mayor cantidad de sangrado, pero no hay una cantidad definida. Puede durar como un periodo menstrual o extenderse hasta 30 días con tendencia a disminuir. Recuerda que el sangrado nunca debe ser mayor a empapar 2 toallas regulares en 1 hora por 2 horas seguidas. El sangrado puede llegar a ser intermitente, es decir, que unos días haya y otros días no. También puede cambiar de color: ser rosa, marrón o café
+                  <br><br>
+                  <strong>¿Cuándo debo preocuparme?</strong>
+                  <br><br> 
+                  <li>
+                    <ul>- Sangrado mayor a empapar 2 toallas regulares en 1 hora por 2 horas seguidas</ul>
+                    <ul>- Coágulos más grandes que un limón</ul>
+                    <ul>- Fiebre que persiste por más de 24 horas </ul>
+                    <ul>- Si 48 hrs. después de haber colocado el misoprostol no hay sangrado.</ul>
+                  </li>
+                  <br><br>
+                  Si presentas alguna de estas señales, acude con alguna proveedora de salud para que seas valorada 
+                  <br><br>
+                  <strong>¿Puedo comer de todo?</strong>
+                  <br><br>
+                  Tu alimentación puede continuar de manera normal, como cuando estás menstruando. Hazle caso a tu cuerpo, si tienes hambre o se te antoja algo, puedes comerlo, eso no alterará el efecto de las pastillas.
+                </p>
               </mdb-modal-body>
               <mdb-modal-footer>
-                <mdb-btn color="#FF0000" @click.native="showModal2 = false">Close</mdb-btn>
+                <mdb-btn color="green">Descargar</mdb-btn>
+                <mdb-btn color="#FF0000" @click.native="showModal2 = false">Cerrar</mdb-btn>
               </mdb-modal-footer>
             </mdb-modal>
           </mdb-col>
-          <mdb-col md="4" class="mb-5">
+          <mdb-col md="3" class="mb-5">
             <mdb-card v-animateOnScroll="{animation: 'fadeInRight', delay: 400}"> 
               <mdb-btn class="buttom-process" color="#FF0000" @click.native="showModal3 = true">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000; padding-bottom: 5px;">
-                  <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                    <path d="M0,172v-172h172v172z" fill="none">
-                    </path>
-                    <g fill="#ffffff">
-                      <g id="surface1">
-                        <path d="M86,6.88c-43.65844,0 -79.12,35.46156 -79.12,79.12c0,43.65844 35.46156,79.12 79.12,79.12c43.65844,0 79.12,-35.46156 79.12,-79.12c0,-43.65844 -35.46156,-79.12 -79.12,-79.12zM86,13.76c39.93625,0 72.24,32.30375 72.24,72.24c0,39.93625 -32.30375,72.24 -72.24,72.24c-39.93625,0 -72.24,-32.30375 -72.24,-72.24c0,-39.93625 32.30375,-72.24 72.24,-72.24zM75.3575,48.0525c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.29,0.22844 -2.32469,1.16906 -2.6875,2.41875c-0.36281,1.26313 0.01344,2.60688 0.9675,3.49375l31.9275,31.9275l-31.9275,31.9275c-1.37062,1.37063 -1.37062,3.57438 0,4.945c1.37063,1.37063 3.57438,1.37063 4.945,0l34.4,-34.4c0.67188,-0.645 1.04813,-1.54531 1.04813,-2.4725c0,-0.92719 -0.37625,-1.8275 -1.04813,-2.4725l-34.4,-34.4c-0.71219,-0.76594 -1.74687,-1.15562 -2.795,-1.075z">
-                        </path>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
+                <mdb-icon icon="chevron-circle-right" class="fa-3x after-icon" />
                 <br>
                 Después del proceso
               </mdb-btn>
@@ -231,9 +299,57 @@
                 <mdb-modal-title>Antes del proceso</mdb-modal-title>
               </mdb-modal-header>
               <mdb-modal-body>
-                <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-04.jpg">
+                <p>
+                  <strong>DESPUÉS DEL PROCESO</strong>
+                  <br><br>
+                  <strong>Lo más frecuente…</strong>
+                  <br>
+                  es que la expulsión ocurra en las primeras 4 horas, sin embargo se trata de un proceso en el que el útero se irá limpiando con el paso de los días , es por esta razón que el sangrado puede extenderse de 14 hasta 30 días, aproximadamente. También es importante que recuerdes cómo te sentías antes de tomar las pastillas, piensa en los síntomas que se han ido días después de usarlas.
+                  <br><br>
+                  Por ejemplo:
+                  <li>
+                    <ul>- Ausencia de sangrado (esto es lo primero que notarás diferente).</ul>
+                    <ul>- Dolor de senos</ul>
+                    <ul>- Náuseas y/o vómito </ul>
+                    <ul>- Dolor de Cabeza</ul>
+                    <ul>- Cansancio y/o sueño</ul>
+                  </li>
+                  <br><br>
+                  - A los 5 días de haber usado las pastillas, notarás que estos síntomas van desapareciendo.
+                  <br><br>
+                  <strong>Después de 14 días…</strong>
+                  <br><br>
+                  Con ayuda de la prueba de embarazo, podrás confirmar la interrupción, pero si te sientes más tranquila, puedes corroborar con ultrasonido.
+                  <br><br>
+                  <strong>¿Cómo usar prueba de orina?</strong> 
+                  <li>
+                    <ul>1. Coloca un poco de orina en un recipiente desechable</ul>
+                    <ul>2. Una vez abierta tu prueba, sujeta con tus dedos el extremo  de color y no toques el extremo blanco.</ul>
+                    <ul>3. Sumerge en la orina el extremo blanco hasta la línea de color durante un minuto</ul>
+                    <ul>4. Retira la prueba de la orina y espera un minuto mientras arroja el resultado</ul>
+                  </li>
+                  <br><br>
+                  <strong>Resultado</strong>
+                  <br>
+                  Si solo aparece una línea, tu prueba es <strong>negativa</strong>
+                  <br>
+                  Si observas <strong>dos líneas</strong>, el resultado es <strong>positivo</strong>. En caso de que sea positivo, comprueba con un ultrasonido. Si el resultado definitivo es positivo, es necesario evaluar una segunda dosis de medicamento o hacer un procedimiento de aspiración.
+                  <br><br>
+                  <strong>¡DATOS DE ALARMA!</strong>
+                  <br>
+                  <li>
+                    <ul>- Continuación del embarazo.</ul>
+                    <ul>- Presencia de alguna infección</ul>
+                    <ul>- Sangrado mayor al esperado  </ul>
+                  </li>
+                  <br><br>
+                  Debes saber que, en caso de que presentes alguna señal de alarma, es tu derecho solicitar atención médica. <strong>NO</strong> existe ningún examen clínico o sanguíneo que detecte el uso de las pastillas.
+                  Las complicaciones que pudieran presentarse son consideradas como <strong>emergencia médica.</strong>
+                  La regulación y leyes en materia de aborto obligan a los prestadores y  prestadoras de salud a atenderte. 
+                </p>
               </mdb-modal-body>
               <mdb-modal-footer>
+                <mdb-btn color="green">Descargar</mdb-btn>
                 <mdb-btn color="#FF0000" @click.native="showModal3 = false">Cerrar</mdb-btn>
               </mdb-modal-footer>
             </mdb-modal>
@@ -250,7 +366,7 @@
             </select>
             <select class="calculator" v-model="selectedMonth">
                 <option value="">Mes</option>
-                <option v-for="option in optionsMonth" v-bind:key="option.valor">{{option.valor}}</option>
+                <option v-for="option in optionsMonth" v-bind:key="option.valor" :value="option.valor">{{option.text}}</option>
             </select>
             <select class="calculator" v-model="selectedYear">
                 <option value="">Año</option>
@@ -298,6 +414,7 @@
 <script>
 import { mdbContainer, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbCol, mdbRow, mdbIcon, mdbNavbarBrand, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbFooter, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll, mdbAccordion} from 'mdbvue';
 import moment from 'moment';
+import axios from 'axios';
 
 export default {
   name: 'HomePage',
@@ -336,20 +453,46 @@ export default {
       selectedYear: '',
       diasMes: 31,
       Results: '',
+      url:'http://localhost:8080/static/img/marie%20stopes%20landing-03.31fcfac.jpg',
       showModal: false,
       showModal2: false,
       showModal3: false,
+      showModal4: false,
       panes: [
         {
-          title: 'Collapsible Group Item #1',
-          content: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable.'
+          title: '<strong>¿Qué necesito para poder realizar mi aborto con pastillas)?</strong>',
+          content: 'Antes de realizarte un aborto debes tener claridad, de si efectivamente estás embarazada, la cantidad de semanas de gestación y descartar la posibilidad de un embarazo ectópico; un embarazo ectópico es aquel que se ubica fuera del útero. Este tipo de embarazo es muy poco común (no más del 1%). Se puede sospechar de un embarazo ectópico, si se observan síntomas como dolor repentino intenso y si persisten en el bajo vientre, normalmente a uno de los dos lados, sangrado vaginal, mareos o desmayos. Para corroborar con exactitud las semanas de embarazo y si el embarazo es ectópico, debes de realizarte un ultrasonido. <br><br> Si sospechas que estás embarazada y no puedes acceder al ultrasonido por razones económicas, puedes optar a realizarte un prueba de embarazo, que están a la venta en las farmacias (no importa la marca, solo hay que fijarse en la fecha de caducidad) que permiten certificar el embarazo, pero no la cantidad de semanas del mismo, o también otra opción es acudir a un laboratorio o clínica para pedir una prueba llamada Fracción Beta Gonadotrofina Coriónica Humana (Beta HCG), es importante pedirla cuantitativa para que salga la cantidad exacta de semanas de embarazo.<br> <br> FUM (Fecha de la Última Menstruación): Otra forma que es muy efectiva y sin costo, es acudir a la memoria para tener un estimado de la cantidad de semanas de gestación, es necesario calcular desde el primer día de la última menstruación o regla y ese total dividirlo por 7. No obstante, hay que tener en cuenta que este método solo le sirve a las mujeres que han tenido una menstruación regular el último año, pues puede tener un margen de error de aproximadamente dos semanas. <br><br> El procedimiento está contraindicado en el caso de que padezcas anemia severa o problemas de coagulación, como también en el hecho de haberte practicado una cesárea en los últimos 30 días; en caso de que tengas puesto un DIU (Dispositivo Intrauterino) o SIU (Sistema Intrauterino) estos deben de ser retirado antes de aplicar el método.'
         }, {
-          title: 'Collapsible Group Item #2',
-          content: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable.'
+          title: '<strong>¿Qué elementos y materiales son necesarios para comenzar con la interrupción con medicamentos?<strong>',
+          content: '<ul><li>Toallas sanitarias (tamaño normal) para controlar el sangrado y la salida del saco gestacional, que puede caer en la toalla, o bien, irse en los restos expulsados cada vez que vayas al baño </li><li>Analgésicos o hierbas (manzanilla, canela y orozus) para subsanar el dolor o cólicos durante el procedimiento</li><li>Dinero para movilizarse en un taxi a un centro de salud u hospital, solo en caso de emergencia (los riesgos son bajos)</li><li>Minutos en el teléfono celular para conectarse con una mujer de confianza en caso de emergencia</li></ul><br><br><strong>¿QUÉ HAY QUE TOMAR EN CUENTA ANTES DE INICIAR EL PROCEDIMIENTO?</strong><br><br><ul><li>Conocer con certeza las semanas exactas de embarazo</li><li>Lo más recomendable para saber las semanas exactas de embarazo o descartar que este sea ectópico es realizarse un ultrasonido</li><li>Padecer anemia severa, problemas de coagulación, haber vivido una cesaría durante los últimos 30 días, en todos estos casos, el aborto con medicamentos está contraindicado</li><li>Si tienes puesto un DIU (Dispositivo intrauterino), este debe ser retirado antes de iniciar el procedimiento</li><li>Estar acompañada por una mujer de confianza, que te ayude en caso de emergencia</li></ul>'
         },
         {
-          title: 'Collapsible #FF0000Group Item #3',
-          content: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven\'t heard of them accusamus labore sustainable.'
+          title: '<strong>¿Cuáles son los tipos de procedimiento para abortar con pastillas?<strong>',
+          content: '<strong>Método 1: Aborto con 12 pastillas de Misoprostol</strong><br><br>Las 12 pastillas de Misoprostol de 200mcg (microgramos), vía sublingual (debajo de la lengua) deben ser divididas en tres dosis de cuatro pastillas cada una, cada tres horas.<br>Cada dosis de cuatro pastillas juntas debe ser ingerida vía sublingual (Debajo de la lengua) pues de esta forma es absorbida más rápido y se va directamente al torrente sanguíneo.<br>Es preciso mantenerlas 30 minutos debajo de la lengua, sin tragar ni masticar durante ese periodo. <br>Los restos del medicamento se pueden escupir o tragar. Es importante insistir en que el procedimiento debe realizarse completamente, es decir, consumir las 12 pastillas de misoprostol.<br><br><strong>Método 2: Aborto con Mifepristona + Misoprostol</strong><br><br><strong>Paso 1.</strong>Tragar una tableta de 200 mg de Mifepristona con agua. Esta es dosis única. La Mifepristona bloquea e impide el acceso de la progesterona, que es la hormona que permite mantener el embarazo.<br><strong>Paso 2.</strong>Tragar 2 tabletas de Ibuprofeno de 400 mg cada una 1 hora ANTES del Misoprostol. Recuerda que la primera toma de Ibuprofeno es entre la toma de Mifepristona y Misoprostol.  El Ibuprofeno sirve para aminorar los cólicos.<br><strong>Paso 3.</strong>Colocar 4 tabletas de Misoprostol, dos entre el cachete y la encía superior izquierda, y dos entre el cachete y la encía superior derecha. Dejar pasar 30 minutos para que se absorban. Cuando pasen los 30 minutos, si aún quedan restos de las patillas, puedes pasarlos con agua. <br><strong>Paso 4.</strong>Para ayudar a disminuir las molestias, puedes continuar tomando Ibuprofeno durante 3 días más, 2 tabletas de 400 mg cada una, cada 8 horas.<br><br>'
+        },
+        {
+          title: '<strong>¿Cuáles son los síntomas comunes asociados al consumo de las pastillas?<strong>',
+          content: '<ul><li>Sangrado mayor o igual al de una menstruación, expulsión de tejidos, coágulos y saco gestacional (tejido amarillento y viscoso) (sangrado y saco gestacional)</li><li>Cólicos menstruales </li><li>Diarrea</li><li>Vómitos</li><li>Náuseas</li><li>Escalofríos (lustración “Sonrojada”)</li><li>Fiebre (Hasta 38°) durante el procedimiento</li></ul>Todos estos síntomas son considerados normales; duran entre 8 y 10 horas y pueden comenzar a presentarse hasta 72 horas después de haber colocado la primera dosis de misoprostol. Para disminuir los síntomas del cólico, el ibuprofeno es muy efectivo. Te puedes tomar dos pastillas de ibuprofeno de 400 mg, media hora antes de poner la primera dosis de misoprostol y luego ibuprofeno antes de colocar cada dosis, es decir, NO más de cinco pastillas de ibuprofeno durante todo el procedimiento. También se pueden utilizar aguas de hierbas como: manzanilla, canela y orozuz. NO se pueden tomar medicamentos que se usen normalmente para los cólicos menstruales pues reduce las contracciones en el útero y pueden contra restar el efecto del misoprostol. Tampoco se pueden utilizar: viadil y aspirina. Ni consumir alcohol o drogas durante el procedimiento.<br>También la aplicación de calor local como bolsas de agua en la panza o baños de agua caliente pueden ayudar a aminorar los síntomas del dolor. Es importante que estés hidratada con agua, te encuentres relajada y en un espacio de confianza, ya que entre menos estresada, los síntomas irán disminuyendo.'
+        },
+        {
+          title: '<strong>¿Cuándo acudir a un centro médico u hospital?<strong>',
+          content: '<ul><li><strong>Hemorragia:</strong>Se puede evidenciar cuando se llenan dos toallas sanitarias normales en una hora y en la hora siguiente dos toallas sanitarias más, acompañado de otros síntomas como, mareos, palidez extrema o desmayos.</li><li><strong>Infección:</strong>Cuando se presenta fiebre sobre los 38° luego de terminado el procedimiento (10 horas después de iniciado el sangrado), con o sin evacuación de restos con mal olor de color obscuro, que conjugan una sensación de malestar generalizado.</li><li><strong>Alergia:</strong>Cuando presentas alguna dificultad para tragar o respirar tras el consumo de misoprostol, otros síntomas de alergia, serian: hinchazón y picazón en el cuerpo. (Picazón Antihistamínico)</li></ul> El misoprostol y la mifepristona NO operan como métodos anticonceptivos, por lo tanto, después de ser usados, puedes volver a quedar embarazada. Se recomienda, por lo mismo, que si deseas evitar nuevos embarazos, uses algún método anticonceptivo de largo como el DIU, SIU o implante hormonal, además del de barrera (condón). '
+        },
+        {
+          title: '<strong>¿Puedo abortar con misoprostol si me encuentro lactando?<strong>',
+          content: ''
+        },
+        {
+          title: '<strong>¿Se puede realizar el procedimiento más de una ocasión?<strong>',
+          content: ''
+        },
+        {
+          title: '<strong>¿Puedo beber o fumar alcohol durante el procedimiento?<strong>',
+          content: 'NO, de ninguna manera puedes fumar, ingerir alcohol o alguna otra droga durante el procedimiento con Misoprostol + Mifepristona.'
+        },
+        {
+          title: '<strong>¿En qué casos NO se puede realizar el procedimiento con Misoprostol + Mifepristona?<strong>',
+          content: '<ul><li>Si tienes anemia severa</li><li>Si tienes antecedentes de alergia al misoprostol</li><li>Si tienes problemas graves de coagulación</li><li>Si tienes un dispositivo intrauterino (DIU) éste debe ser retirado antes de realizar el tratamiento</li><li>Si tienes más de 12 de gestación </li><li>Tienes un embarazo ectópico (embarazo fuera del útero)</li><li>Si sabes que NO podrás acudir a algún centro de salud en caso de emergencia</li><li>Se te practicaste una cesárea el último mes</li><li>Si estás siendo obligada a abortar</li><li>Si NO estás segura de tu decisión </li></ul>'
         }
       ]
     };
@@ -404,7 +547,18 @@ export default {
       } else {
         this.Results = 'Debes seleccionar una fecha válida.';
       }
-    }
+    },
+    forceFileDownload(response){
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'file.png');
+      document.body.appendChild(link);
+      link.click();
+    },
+    downloadWithAxios(){
+      axios({method: 'get', url: this.url, responseType: 'arraybuffer'}).then(response => {this.forceFileDownload(response);})
+        .catch(() => console.log('error occured'));}
   }
 };
 
@@ -475,24 +629,44 @@ a {
 }
 
 .whats-icon{
-  width: 100%;
-  margin-top: 25px;
+  width: 80%;
+  margin: 20px 0px 5px 5px;
+}
+
+.tablets-icon{
+  margin: 10px;
+}
+
+.before-icon{
+  margin: 10px;
+}
+
+.clock-icon{
+  margin: 10px;
+}
+
+.after-icon{
+  margin: 10px;
+}
+
+.contact-title{
+  margin: -18px;
 }
 
 .phone-number{
   color: white;
   font-weight: bold;
-  font-size: 22px;
-  margin: 75px 0px 0px 70px;
+  font-size: 18px;
+  margin-left: -15px;
 }
 
 .input-secction{
     display: block;
-    top: 165px;
-    width: 325px;
+    top: 535px;
+    width: 10%;
+    height: 20%;
     background-color: rgba(0,0,0,.5);;
     padding: 30px;
-    height: 505px;
     margin-right: 100px;
 }
 
@@ -570,7 +744,7 @@ a {
 }
 
 .blue-bar-title{
-  color: white;
+  color: white; 
   padding: 25px 0px 0px 50px;
   font-weight: bold;
 }
@@ -594,11 +768,17 @@ a {
   color: white;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 766px) {
   .input-secction{
     width: 100%;
     top: 80px;
     padding: 50px;
+  }
+  .phone-number{
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 50px;
   }
   .blue-bar{
     height: 575px;
@@ -635,10 +815,17 @@ a {
 @media (max-width: 1024px) {
   .input-secction{
     width: 100%;
-    height: 71%;
-    top: 120px;
-    padding-top: 10px; 
+    height: 10%;
+    top: 500px;
+    padding-top: 50px; 
     margin-right: 30px;
+  }
+  .contact-title{
+    margin: -40px 0px -10px -40px;
+  }
+  .whats-icon{
+    width: 20%;
+    margin: 12px 0px 5px -25px;
   }
   .blue-bar{
     height: 575px;
@@ -669,8 +856,8 @@ a {
   color: white;
   }
   .phone-number{
-    font-size: 45px;
-    margin: 30px 0px 0px 10px;
+    font-size: 40px;
+    margin: -63px 0px 0px 45px;
   }
 }
 
