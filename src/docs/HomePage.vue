@@ -13,21 +13,21 @@
         </mdb-navbar-nav>
       </mdb-navbar-toggler>
     </mdb-navbar>
-    <!-- :style="{marginTop: '60px'}" -->
     <div style="margin-top: -70px;">
-      <mdb-edge-header style="height: 670px;">
-        <div align="right" class="home-page-background">
-          <mdb-col align="left" class="input-secction" sm="6">
-            <p class="h5 contact-title" style="color: white;">Contáctanos</p>
-            <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon.png">
-            <p class="phone-number">&nbsp;&nbsp;5614737334</p>
-          </mdb-col>
-        </div>
+      <mdb-edge-header class="home-page-background">
         <div class="blue-bar">
-          <section style="background: #002B53; height: 19%; margin-top: -90px;">
-            <h2 class="blue-bar-title">&nbsp;</h2>
-            <p class="blue-bar-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          </section>
+          <div>
+            <h2 class="blue-bar-title">
+              Todas las mexicanas tienen el derecho al acceso a interrumpir legalmente su embarazo, dependiendo de las causales de cada estado
+            </h2>
+          </div>
+          <div class="blue-bar-interior-wats">
+            <p class="h5 contact-title">
+              Contáctanos <br />
+              <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon.png"><br>
+              5614737334
+            </p>
+          </div>
         </div>
       </mdb-edge-header>
       <mdb-container>
@@ -554,8 +554,10 @@ a {
 .home-page-background {
   width: 100%;
   height: 100%;
-  background: url('../../build/img/img-Marie/fondo.jpg') center;
+  background: url('../../build/img/img-Marie/fondo.jpg');
   background-size: cover;
+  height: 670px; 
+  position: relative;
 }
 .header-logo-navbar{
   max-width: 200px;
@@ -581,8 +583,8 @@ a {
 }
 
 .whats-icon{
-  width: 80%;
-  margin: 20px 0px 5px 5px;
+  margin: 5px 0px;
+  max-width: 50px;
 }
 
 .tablets-icon{
@@ -602,7 +604,9 @@ a {
 }
 
 .contact-title{
-  margin: -18px;
+  color: white; 
+  text-align:center; 
+  padding:3px 3px;
 }
 
 .phone-number{
@@ -695,16 +699,23 @@ a {
   padding: 0% 0% 20% 1%;;
 }
 
-.blue-bar-title{
-  color: white; 
-  padding: 25px 0px 0px 50px;
-  font-weight: bold;
+.blue-bar {
+  position: absolute; 
+  bottom: 0; 
+  display:flex; 
+  justify-content: space-between;
+  background-color: rgba(0, 43, 83, 0.9);
 }
 
-.blue-bar-subtitle{
+.blue-bar-interior-wats{
+  padding: 5px 20px;
+}
+
+.blue-bar-title{
   color: white; 
-  padding: 0px 0px 0px 50px; 
-  font-size: 15px;
+  padding: 45px 5px 0px 30px;
+  font-weight: normal;
+  font-size: 25px;
 }
 
 .card-text-content{
@@ -736,9 +747,8 @@ a {
     font-size: 20px;
     margin-left: 50px;
   }
+  
   .blue-bar{
-    height: 575px;
-    padding-top: 40px;
     text-align: center;
   }
   .blue-bar-title{
@@ -777,19 +787,21 @@ a {
     margin-right: 30px;
   }
   .contact-title{
-    margin: -40px 0px -10px -40px;
+    color: white; 
+    text-align:center; 
+    padding:3px 3px;
   }
   .whats-icon{
-    width: 20%;
-    margin: 12px 0px 5px -25px;
+    margin: 5px 0px;
+    max-width: 40px;
   }
   .blue-bar{
-    height: 575px;
-    padding-top: 40px;
     text-align: center;
   }
   .blue-bar-title{
-    padding: 15px 0px 0px 0px;
+    padding: 15px 0px 0px 20px;
+    font-size: 21px;
+    text-align: left;
   }
   .blue-bar-subtitle{
     padding: 0px;
