@@ -35,130 +35,29 @@
         <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
           <p>Antes de iniciar el proceso, considera lo siguiente</p>
         </mdb-col>
-
         <mdb-row>
           <mdb-col md="6" class="mb-5">
             <mdb-card class="animated fadeInLeft card-text-content">
               <mdb-card-body style="height: 220px;" >
-                <mdb-card-title><img style="width: 8%; padding-right: 5px;" src="../../build/img/img-Marie/marie stopes landing-06.jpg"><strong style="font-size: 20px;">CONFIRMA QUE ESTAS EMBARAZADA</strong></mdb-card-title>
-                <mdb-card-text>Poniendo atención a los síntomas puedes hacer una comparación después de haber usado las pastillas. <br/><br/> Puedes confirmar con una prueba de orina de farmacia. 
-                Para mayor certeza y oara conocer la edad gestional. puedes realizar un ultrasonido.</mdb-card-text>
-              </mdb-card-body>
-            </mdb-card>
-          </mdb-col>
-          <mdb-col md="6" class="mb-5">
-            <mdb-card class="animated fadeInRight card-text-content">
-              <mdb-card-body>
-                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-09.jpg"><strong style="font-size: 20px;">ASEGÚRATE DE QUE EL EMBARAZO ESTÁ DENTRO DEL ÚTERO</strong></mdb-card-title>
-                <mdb-card-text>Si además sientes dolor intenso que se concentra en un lado (bajo vientre derecho o izquierdo), 
-                  que se presenta de repente, con palpitaciones y debilidad <strong style="color: #019934">¡requieres atención médica urgente y no puedes iniciar el proceso!</strong></mdb-card-text>
-              </mdb-card-body>
-            </mdb-card>
-          </mdb-col>
-        </mdb-row>
-        <mdb-row>
-          <mdb-col md="6" class="mb-5">
-            <mdb-card class="animated fadeInLeft card-text-content">
-              <mdb-card-body>
-                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-07.jpg"><strong style="font-size: 20px;">LA EDAD GESTIONAL</strong></mdb-card-title>
-                <mdb-card-text>¿Cuantas semanas de embarazo tienes?<br><br>Puedes calcularlo de la siguiente forma: contar los dias desde el primer día de la decha de la última menstrución,
-                el resultado en días divídelo entre 7 para conocer las semanas. Si es posible, confima con ulrasonido</mdb-card-text>
-              </mdb-card-body>
-            </mdb-card>
-          </mdb-col>
-          <mdb-col md="6" class="mb-5">
-            <mdb-card class="animated fadeInRight card-text-content-extra">
-              <mdb-card-body>
-                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-08.jpg"><strong style="font-size: 20px;">IMPORTANTE</strong></mdb-card-title>
-                <mdb-card-text><strong style="color: #019934">¿Tienes colocado algún dispositivo intrauterino (DIU o SIU)?</strong><br>
-                En caso de tener alguno, debes retirarlo antes de tomar las pastillas. <br>
-                <strong style="color: #019934">¿Eres alérgica a la mifepristona o al misoprostol?</strong><br>
-                Si eres alérgica, no las tomes y considera otra opcion para tu interrupcion. <br>
-                <strong style="color: #019934">¿Tienes problemas de coagulación, padeces anemia severa, asma no controlada o usas corticoides?</strong><br>
-                Para iniciar el proceso con las pastillas rquieres vigilancia médica.<br>
+                <mdb-card-title><img style="width: 8%; padding-right: 5px;" src="../../build/img/img-Marie/marie stopes landing-06.jpg"><strong style="font-size: 18px;">Antes de iniciar con el proceso. considera lo siguiente:</strong></mdb-card-title>
+                <mdb-card-text>
+                 <strong>1.Confirma que estás embarazada</strong>
+                  <br>
+                  ¿Cómo saber si estás embarazada?
+                  <br>
+                  <strong>Síntomas:</strong>
+                  <br>
+                  <mdb-icon icon="caret-right" /> Retraso del periodo menstrual <br>
+                  <mdb-icon icon="caret-right" /> Mayor sensibilidad en los senos <br>
+                  <a class="more-infro-buttom" style="color: green; " @click="showMoreInfo = true">Leer mas...</a>
                 </mdb-card-text>
               </mdb-card-body>
             </mdb-card>
-          </mdb-col>
-        </mdb-row>
-        <h2 class="text-center mt-5 font-weight-bold">Consulta nuestra información</h2>
-        <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
-          <p>Descarga nuestras guías para obtener información util de cada estatus del proceso</p>
-        </mdb-col> 
-        <mdb-row>
-          <a name="lancha" id="lancha" class="fadeIn"></a>
-          <mdb-col md="3" class="mb-5">
-            <mdb-card v-animateOnScroll="{animation: 'fadeInLeft', delay: 400}"> 
-              <mdb-btn class="buttom-process" color="#FF0000" @click.native="showModal4 = true">
-                <mdb-icon icon="tablets" class="fa-3x tablets-icon"/>
-                <br>
-                MIFE + MISO
-              </mdb-btn>
-            </mdb-card>
-            <mdb-modal centered :show="showModal4" @close="showModal4 = false">
+            <mdb-modal centered :show="showMoreInfo" @close="showMoreInfo = false">
               <mdb-modal-header>
-                <mdb-modal-title>MIFE + MISO</mdb-modal-title>
+                <mdb-modal-title><strong>Antes de iniciar con el proceso. considera lo siguiente</strong></mdb-modal-title>
               </mdb-modal-header>
-              <mdb-modal-body>
-                <p>
-                  <strong>Interrupción segura del embarazo con pastillas</strong>
-                  <br><br>
-                  <strong>¿Sabías qué..?</strong>
-                  <br><br>
-                  El aborto con pastillas es un proceso. Al ser casi idéntico al aborto espontaneo, es más natural y menos invasivo. No se trata de un procedimiento, la finalidad de este proceso es interrumpir el embarazo y no vaciar el útero al momento de usar las pastillas, el útero se irá vaciando al paso de los días.
-                  <br><br>
-                  <strong>Además…</strong>
-                  <br><br>
-                  La Organización Mundial de la Salud dice que usar las pastillas en casa, es una opción segura para las mujeres que necesitan interrumpir su embarazo.
-                  <br><br>
-                  <strong>Tratamiento de mifepristona + misoprostol:</strong>
-                  <br>
-                  El uso combinado de los medicamentos hará tu proceso más rápido, más eficaz y con menos efectos secundarios.
-                  <br><br>
-                  <strong>Sobre las pastillas……</strong>
-                  <br><br>
-                  <strong>¿Por qué son dos medicamentos 1 pastilla de mifepristona y sólo 4 pastillas de misoprostol?</strong>
-                  <br><br>
-                  La mifepristona potencializa los efectos del misoprostol y hace el proceso 3 veces más efectivo. Por lo tanto, necesitas 1 pastilla de mifepristona y solo 4 pastillas de misoprostol para iniciar tu proceso de interrupción.
-                  <br><br>
-                  <strong>¿Cómo saber que las pastillas están en buenas condiciones?</strong>
-                  <br>
-                  Revisa lo siguiente:
-                  <li>
-                    <ul><mdb-icon icon="circle" class="fa-xs"/> Que la fecha de caducidad sea menor a 2 años.</ul>
-                    <ul><mdb-icon icon="circle" class="fa-xs"/> Que la caja se encuentre cerrada</ul>
-                    <ul><mdb-icon icon="circle" class="fa-xs"/> Que el empaque (la lámina de aluminio en la que se encuentran encapsuladas las pastillas) cubra por ambos lados cada tableta.</ul>
-                    <ul><mdb-icon icon="circle" class="fa-xs"/> Que estén en un lugar fresco.</ul>
-                  </li>                                           
-                  <br><br>
-                  <strong>¿Qué tan efectiva es esta opción?</strong>
-                  <br>
-                  El uso combinado de MIFEPRISTONA + MISOPROSTOL es el tratamiento reconocido por la Organización Mundial de la Salud como el “estándar de oro” por el alto porcentaje de efectividad que tiene para que las mujeres puedan interrumpir su embarazo de forma segura. La probabilidad de falla del tratamiento combinado (mife + miso) es de 5 en 100, mientras que la de misoprostol solo es de 15 en 100.
-                </p>
-                <!-- <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-03.jpg"> -->
-              </mdb-modal-body>
-              <mdb-modal-footer>
-                <mdb-btn color="green">Descargar</mdb-btn>
-                <mdb-btn color="#FF0000" @click.native="showModal4 = false">Cerrar</mdb-btn>
-              </mdb-modal-footer>
-            </mdb-modal>
-          </mdb-col>
-          <mdb-col md="3" class="mb-5">
-            <mdb-card v-animateOnScroll="{animation: 'fadeInLeft', delay: 400}"> 
-              <mdb-btn class="buttom-process" color="#FF0000" @click.native="showModal = true">
-                <mdb-icon icon="chevron-circle-left" class="fa-3x before-icon"/>
-                <br>
-                ANTES DEL PROCESO
-              </mdb-btn>
-            </mdb-card>
-            <mdb-modal centered :show="showModal" @close="showModal = false">
-              <mdb-modal-header>
-                <mdb-modal-title>ANTES DEL PROCESO</mdb-modal-title>
-              </mdb-modal-header>
-              <mdb-modal-body>
-                <p>
-                  <strong>ANTES DE INICIAR CON EL PROCESO, CONSIDERA LO SIGUENTE:</strong> 
-                  <br><br>
+              <mdb-modal-body> 
                   <strong>1.Confirma que estás embarazada</strong>
                   <br>
                   ¿Cómo saber si estás embarazada?
@@ -166,12 +65,12 @@
                   <strong>Síntomas:</strong>
                   <br><br>
                   <li>
-                    <ul><mdb-icon icon="circle" class="fa-xs"/> Retraso del periodo menstrual</ul>
-                    <ul><mdb-icon icon="circle" class="fa-xs"/> Mayor sensibilidad en los senos</ul>
-                    <ul><mdb-icon icon="circle" class="fa-xs"/> Náuseas y/o vómito, especialmente al despertar </ul>
-                    <ul><mdb-icon icon="circle" class="fa-xs"/> Dolor de cabeza</ul>
-                    <ul><mdb-icon icon="circle" class="fa-xs"/> Cansancio</ul>
-                    <ul><mdb-icon icon="circle" class="fa-xs"/> Orinar con mucha frecuencia</ul>
+                    <ul><mdb-icon icon="caret-right" /> Retraso del periodo menstrual</ul>
+                    <ul><mdb-icon icon="caret-right" /> Mayor sensibilidad en los senos</ul>
+                    <ul><mdb-icon icon="caret-right" /> Náuseas y/o vómito, especialmente al despertar </ul>
+                    <ul><mdb-icon icon="caret-right" /> Dolor de cabeza</ul>
+                    <ul><mdb-icon icon="caret-right" /> Cansancio</ul>
+                    <ul><mdb-icon icon="caret-right" /> Orinar con mucha frecuencia</ul>
                   </li>
                   <br>
                   Poniendo atención a estos síntomas, puedes hacer una comparación después de haber usado las pastillas.
@@ -216,11 +115,150 @@
                   Tener un espacio seguro y cómodo para llevar a cabo tu interrupción es importante para que te sientas tranquila, procura tener un baño cerca y suficientes toallas regulares (no nocturnas) para monitorear el sangrado. Estar acompañada de alguien en quien confías y que pueda apoyarte, facilitará el proceso. 
                   <br><br>
                   <mdb-icon icon="check" class="fa-sm"/> Identifica algún centro de salud cercano para acudir en caso de emergencia.
-                </p>
                 <!-- <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-03.jpg"> -->
               </mdb-modal-body>
               <mdb-modal-footer>
-                <mdb-btn color="green">Descargar</mdb-btn>
+                <mdb-btn color="#FF0000" @click.native="showMoreInfo = false">Cerrar</mdb-btn>
+              </mdb-modal-footer>
+            </mdb-modal>
+          </mdb-col>
+          <mdb-col md="6" class="mb-5">
+            <mdb-card class="animated fadeInRight card-text-content">
+              <mdb-card-body>
+                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-09.jpg"><strong style="font-size: 18px;">Aborto con Mifepristona + Misoprostol</strong></mdb-card-title>
+                <mdb-card-text>
+                  <strong> Paso 1.</strong>Tragar una tableta de 200 mg de Mifepristona con agua. Esta es dosis única. La Mifepristona bloquea e impide el acceso de la progesterona, que es la hormona que permite mantener el embarazo.
+                  <br>
+                  <strong>Paso 2.</strong>Tragar 2 tabletas de Ibuprofeno de 400 mg cada una 1 hora ANTES del Misoprostol. Recuerda que la primera toma de Ibuprofeno es entre la toma de Mifepristona y Misoprostol.
+                  <a class="more-infro-buttom" style="color: green;" @click="showMoreInfo2 = true">Leer mas...</a>
+                </mdb-card-text>
+                </mdb-card-body>
+            </mdb-card>
+            <mdb-modal centered :show="showMoreInfo2" @close="showMoreInfo2 = false">
+              <mdb-modal-header>
+                <mdb-modal-title>Aborto con Mifepristona + Misoprosto</mdb-modal-title>
+              </mdb-modal-header>
+              <mdb-modal-body>
+                <mdb-card-text>
+                  <strong> Paso 1.</strong>Tragar una tableta de 200 mg de Mifepristona con agua. Esta es dosis única. La Mifepristona bloquea e impide el acceso de la progesterona, que es la hormona que permite mantener el embarazo.
+                  <br><br>
+                  <strong>Paso 2.</strong>Tragar 2 tabletas de Ibuprofeno de 400 mg cada una 1 hora ANTES del Misoprostol. Recuerda que la primera toma de Ibuprofeno es entre la toma de Mifepristona y Misoprostol. El Ibuprofeno sirve para aminorar los cólicos.
+                  <br><br>
+                  <strong>Paso 3.</strong>Colocar 4 tabletas de Misoprostol, dos entre el cachete y la encía superior izquierda, y dos entre el cachete y la encía superior derecha. Dejar pasar 30 minutos para que se absorban. Cuando pasen los 30 minutos, si aún quedan restos de las patillas, puedes pasarlos con agua.
+                  <br><br>
+                  <strong>Paso 4.</strong>Para ayudar a disminuir las molestias, puedes continuar tomando Ibuprofeno durante 3 días más, 2 tabletas de 400 mg cada una, cada 8 horas.
+                </mdb-card-text>
+              </mdb-modal-body>
+              <mdb-modal-footer>
+                <mdb-btn color="#FF0000" @click.native="showMoreInfo2 = false">Cerrar</mdb-btn>
+              </mdb-modal-footer>
+            </mdb-modal>
+          </mdb-col>
+        </mdb-row>
+        <mdb-row>
+          <mdb-col md="6" class="mb-5">
+            <mdb-card class="animated fadeInLeft card-text-content">
+              <mdb-card-body>
+                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-07.jpg"><strong style="font-size: 18px;">Lo más frecuente…</strong></mdb-card-title>
+                <mdb-card-text>Es que la expulsión ocurra en las primeras 4 horas, sin embargo se trata de un proceso en el que el útero se irá limpiando con el paso de los días , es por esta razón que el sangrado puede extenderse de 14 hasta 30 días, aproximadamente. También es importante que recuerdes cómo te sentías antes de tomar las pastillas, piensa en los síntomas que se han ido días después de usarlas.
+               <a class="more-infro-buttom" style="color: green;" @click="showMoreInfo3 = true">Leer mas...</a>
+                </mdb-card-text>
+                </mdb-card-body>
+            </mdb-card>
+            <mdb-modal centered :show="showMoreInfo3" @close="showMoreInfo3 = false">
+              <mdb-modal-header>
+                <mdb-modal-title>Lo más frecuente…</mdb-modal-title>
+              </mdb-modal-header>
+              <mdb-modal-body>
+                <mdb-card-text>
+                  <strong>Lo más frecuente…</strong>
+                  <br>
+                  es que la expulsión ocurra en las primeras 4 horas, sin embargo se trata de un proceso en el que el útero se irá limpiando con el paso de los días , es por esta razón que el sangrado puede extenderse de 14 hasta 30 días, aproximadamente. También es importante que recuerdes cómo te sentías antes de tomar las pastillas, piensa en los síntomas que se han ido días después de usarlas.
+                  <br><br>
+                  Por ejemplo: <br>
+                  <mdb-icon icon="caret-right" /> Ausencia de sangrado (esto es lo primero que notarás diferente). <br>
+                  <mdb-icon icon="caret-right" /> EL DÍA QUE COLOQUES EL MISOPROSTOL, EL SANGRADO VOLVERÁ<br>
+                  <mdb-icon icon="caret-right" /> Dolor de senos<br>
+                  <mdb-icon icon="caret-right" /> Náuseas y/o vómito<br> 
+                  <mdb-icon icon="caret-right" /> Dolor de Cabeza<br>
+                  <mdb-icon icon="caret-right" /> Cansancio y/o sueño<br> 
+                  <br>
+                  A los 5 días de haber usado las pastillas, notarás que estos síntomas van desapareciendo.
+                  <br><br>
+                  <strong>Después de 14 días…</strong><br>
+                  Con ayuda de la prueba de embarazo, podrás confirmar la interrupción, pero si te sientes más tranquila, puedes corroborar con ultrasonido.
+                  <br><br>
+                  <strong>¿Cómo usar prueba de orina?</strong><br> 
+                  1. Coloca un poco de orina en un recipiente desechable <br>
+                  2. Una vez abierta tu prueba, sujeta con tus dedos el extremo  de color y no toques el extremo blanco.<br>
+                  3. Sumerge en la orina el extremo blanco hasta la línea de color durante un minuto<br>
+                  4. Retira la prueba de la orina y espera un minuto mientras arroja el resultado <br>
+                  <br><br>
+                  <strong>Resultado</strong> <br>
+                  Si solo aparece una línea, tu prueba es <strong>negativa</strong><br>
+                  Si observas <strong>dos líneas</strong>, el resultado es <strong>positivo</strong>. En caso de que sea positivo, comprueba con un ultrasonido. Si el resultado definitivo es positivo, es necesario evaluar una segunda dosis de medicamento o hacer un procedimiento de aspiración.
+                </mdb-card-text>
+              </mdb-modal-body>
+              <mdb-modal-footer>
+                <mdb-btn color="#FF0000" @click.native="showMoreInfo3 = false">Cerrar</mdb-btn>
+              </mdb-modal-footer>
+            </mdb-modal>
+          </mdb-col>
+          <mdb-col md="6" class="mb-5">
+            <mdb-card class="animated fadeInRight card-text-content-extra card-text-content">
+              <mdb-card-body>
+                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-08.jpg"><strong style="font-size: 18px;">¡Datos de alarma!</strong></mdb-card-title>
+                <mdb-card-text ><br>
+                  <mdb-icon icon="caret-right" /> Continuación del embarazo. <br>
+                  <mdb-icon icon="caret-right" /> Presencia de alguna infección <br>
+                  <mdb-icon icon="caret-right" /> Sangrado mayor al esperad <br>
+                </mdb-card-text>
+              </mdb-card-body>
+            </mdb-card>
+          </mdb-col>
+        </mdb-row>
+        <h2 class="text-center mt-5 font-weight-bold">Consulta nuestra información</h2>
+        <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
+          <p>Descarga nuestras guías para obtener información util de cada estatus del proceso</p>
+        </mdb-col> 
+        <mdb-row>
+          <a name="lancha" id="lancha" class="fadeIn"></a>
+          <mdb-col md="3" class="mb-5">
+            <mdb-card v-animateOnScroll="{animation: 'fadeInLeft', delay: 400}"> 
+              <mdb-btn class="buttom-process" color="#FF0000" @click.native="showModal4 = true">
+                <mdb-icon icon="tablets" class="fa-3x tablets-icon"/>
+                <br>
+                MIFE + MISO
+              </mdb-btn>
+            </mdb-card>
+            <mdb-modal centered :show="showModal4" @close="showModal4 = false">
+              <mdb-modal-header>
+                <mdb-modal-title>MIFE + MISO</mdb-modal-title>
+              </mdb-modal-header>
+              <mdb-modal-body>
+                <img style="width: 100%;" src="../../build/img/img-Marie/infografia_mife+miso_1.jpg">
+              </mdb-modal-body>
+              <mdb-modal-footer>
+                <mdb-btn color="#FF0000" @click.native="showModal4 = false">Cerrar</mdb-btn>
+              </mdb-modal-footer>
+            </mdb-modal>
+          </mdb-col>
+          <mdb-col md="3" class="mb-5">
+            <mdb-card v-animateOnScroll="{animation: 'fadeInLeft', delay: 400}"> 
+              <mdb-btn class="buttom-process" color="#FF0000" @click.native="showModal = true">
+                <mdb-icon icon="chevron-circle-left" class="fa-3x before-icon"/>
+                <br>
+                ANTES DEL PROCESO
+              </mdb-btn>
+            </mdb-card>
+            <mdb-modal centered :show="showModal" @close="showModal = false">
+              <mdb-modal-header>
+                <mdb-modal-title>Antes del proceso</mdb-modal-title>
+              </mdb-modal-header>
+              <mdb-modal-body>
+                <img style="width: 100%;" src="../../build/img/img-Marie/infografia_mife+miso_antesdelproceso.jpg">
+              </mdb-modal-body>
+              <mdb-modal-footer>
                 <mdb-btn color="#FF0000" @click.native="showModal = false">Cerrar</mdb-btn>
               </mdb-modal-footer>
             </mdb-modal>
@@ -238,51 +276,9 @@
                 <mdb-modal-title>Durante el proceso</mdb-modal-title>
               </mdb-modal-header>
               <mdb-modal-body>
-                <p>
-                  <strong>Durante el proceso:</strong> 
-                  <br><br>
-                  <strong>¿Cómo tomar las pastillas?</strong>
-                  <br><br>
-                  Tragar una pastilla de MIFEPRISTONA con agua, esta pastilla no produce molestia, pero puede llegar a aparecer un leve sangrado
-                  <br><br>
-                  Una hora antes de colocar el misoprostol, traga con agua 2 pastillas de IBUPROFENO de 400mg.
-                  <br><br>
-                  El ibuprofeno ayudará a reducir las molestias que pudieran presentarse con el misoprostol, síguelo tomando por 5 días cada 8 horas. El ibuprofeno no afecta el proceso de interrupción, sólo ayuda a disminuir la molestia, es importante que lo tomes con mínimo una hora de anticipación para que pueda absorberse y su efecto analgésico comience antes de que se presenten las molestias.
-                  <br><br>
-                  En un lapso de 24 a 48 hrs después de tomar la mifepristona, coloca 4 pastillas de MISOPROSTOL, dos entre el cachete y la encía superior derecha y dos entre el cachete y la encía superior izquierda, deja pasar 30 minutos.
-                  <br><br>
-                  Puedes pasar la saliva de forma normal pero sin tragar las pastillas. Cuando pasen los 30 minutos, si aún quedan restos de las pastillas, puedes pasarlos con agua.
-                  <br><br>
-                  <strong>¿Qué voy a sentir?</strong> 
-                  <br><br>
-                  A partir de la primera media hora presentarás sangrado y cólico. Puede que también se presenten: escalofríos, mareo, náuseas, vómito, diarrea, y/o fiebre pasajera. Estos últimos no se presentan siempre, y puede o no que aparezcan, pero en caso de que los llegaras a experimentar no debes alarmarte, son pasajeros y se quitan solos por completo. No es necesario tomar otro medicamento.
-                  <br><br>
-                  <strong>¿Qué tanto duele?</strong>
-                  <br><br>
-                  El cuerpo de cada mujer es diferente, por lo que, al igual que el sangrado, no existe una intensidad definida para el dolor. El ibuprofeno ayudará a controlar las molestias. También puedes ayudarte de compresas calientes en el vientre y espalda baja.
-                  <br><br>
-                  <strong>¿Qué tanto tengo que sangrar?</strong>
-                  <br><br>
-                  Las primeras horas después de haber colocado el misoprostol se presentará la mayor cantidad de sangrado, pero no hay una cantidad definida. Puede durar como un periodo menstrual o extenderse hasta 30 días con tendencia a disminuir. Recuerda que el sangrado nunca debe ser mayor a empapar 2 toallas regulares en 1 hora por 2 horas seguidas. El sangrado puede llegar a ser intermitente, es decir, que unos días haya y otros días no. También puede cambiar de color: ser rosa, marrón o café
-                  <br><br>
-                  <strong>¿Cuándo debo preocuparme?</strong>
-                  <br><br> 
-                  <li>
-                    <ul>- Sangrado mayor a empapar 2 toallas regulares en 1 hora por 2 horas seguidas</ul>
-                    <ul>- Coágulos más grandes que un limón</ul>
-                    <ul>- Fiebre que persiste por más de 24 horas </ul>
-                    <ul>- Si 48 hrs. después de haber colocado el misoprostol no hay sangrado.</ul>
-                  </li>
-                  <br><br>
-                  Si presentas alguna de estas señales, acude con alguna proveedora de salud para que seas valorada 
-                  <br><br>
-                  <strong>¿Puedo comer de todo?</strong>
-                  <br><br>
-                  Tu alimentación puede continuar de manera normal, como cuando estás menstruando. Hazle caso a tu cuerpo, si tienes hambre o se te antoja algo, puedes comerlo, eso no alterará el efecto de las pastillas.
-                </p>
+                <img style="width: 100%;" src="../../build/img/img-Marie/infografia_mife+miso_proceso.jpg">
               </mdb-modal-body>
               <mdb-modal-footer>
-                <mdb-btn color="green">Descargar</mdb-btn>
                 <mdb-btn color="#FF0000" @click.native="showModal2 = false">Cerrar</mdb-btn>
               </mdb-modal-footer>
             </mdb-modal>
@@ -297,60 +293,12 @@
             </mdb-card>
             <mdb-modal centered :show="showModal3" @close="showModal3 = false">
               <mdb-modal-header>
-                <mdb-modal-title>Antes del proceso</mdb-modal-title>
+                <mdb-modal-title>Después del proceso</mdb-modal-title>
               </mdb-modal-header>
               <mdb-modal-body>
-                <p>
-                  <strong>DESPUÉS DEL PROCESO</strong>
-                  <br><br>
-                  <strong>Lo más frecuente…</strong>
-                  <br>
-                  es que la expulsión ocurra en las primeras 4 horas, sin embargo se trata de un proceso en el que el útero se irá limpiando con el paso de los días , es por esta razón que el sangrado puede extenderse de 14 hasta 30 días, aproximadamente. También es importante que recuerdes cómo te sentías antes de tomar las pastillas, piensa en los síntomas que se han ido días después de usarlas.
-                  <br><br>
-                  Por ejemplo:
-                  <li>
-                    <ul>- Ausencia de sangrado (esto es lo primero que notarás diferente).</ul>
-                    <ul>- Dolor de senos</ul>
-                    <ul>- Náuseas y/o vómito </ul>
-                    <ul>- Dolor de Cabeza</ul>
-                    <ul>- Cansancio y/o sueño</ul>
-                  </li>
-                  <br><br>
-                  - A los 5 días de haber usado las pastillas, notarás que estos síntomas van desapareciendo.
-                  <br><br>
-                  <strong>Después de 14 días…</strong>
-                  <br><br>
-                  Con ayuda de la prueba de embarazo, podrás confirmar la interrupción, pero si te sientes más tranquila, puedes corroborar con ultrasonido.
-                  <br><br>
-                  <strong>¿Cómo usar prueba de orina?</strong> 
-                  <li>
-                    <ul>1. Coloca un poco de orina en un recipiente desechable</ul>
-                    <ul>2. Una vez abierta tu prueba, sujeta con tus dedos el extremo  de color y no toques el extremo blanco.</ul>
-                    <ul>3. Sumerge en la orina el extremo blanco hasta la línea de color durante un minuto</ul>
-                    <ul>4. Retira la prueba de la orina y espera un minuto mientras arroja el resultado</ul>
-                  </li>
-                  <br><br>
-                  <strong>Resultado</strong>
-                  <br>
-                  Si solo aparece una línea, tu prueba es <strong>negativa</strong>
-                  <br>
-                  Si observas <strong>dos líneas</strong>, el resultado es <strong>positivo</strong>. En caso de que sea positivo, comprueba con un ultrasonido. Si el resultado definitivo es positivo, es necesario evaluar una segunda dosis de medicamento o hacer un procedimiento de aspiración.
-                  <br><br>
-                  <strong>¡DATOS DE ALARMA!</strong>
-                  <br>
-                  <li>
-                    <ul>- Continuación del embarazo.</ul>
-                    <ul>- Presencia de alguna infección</ul>
-                    <ul>- Sangrado mayor al esperado  </ul>
-                  </li>
-                  <br><br>
-                  Debes saber que, en caso de que presentes alguna señal de alarma, es tu derecho solicitar atención médica. <strong>NO</strong> existe ningún examen clínico o sanguíneo que detecte el uso de las pastillas.
-                  Las complicaciones que pudieran presentarse son consideradas como <strong>emergencia médica.</strong>
-                  La regulación y leyes en materia de aborto obligan a los prestadores y  prestadoras de salud a atenderte. 
-                </p>
+                <img style="width: 100%;" src="../../build/img/img-Marie/infografia_mife+miso_despuesdelproceso.jpg">
               </mdb-modal-body>
               <mdb-modal-footer>
-                <mdb-btn color="green">Descargar</mdb-btn>
                 <mdb-btn color="#FF0000" @click.native="showModal3 = false">Cerrar</mdb-btn>
               </mdb-modal-footer>
             </mdb-modal>
@@ -459,6 +407,9 @@ export default {
       showModal2: false,
       showModal3: false,
       showModal4: false,
+      showMoreInfo: false,
+      showMoreInfo2: false,
+      showMoreInfo3: false,
       panes: [
         {
           title: '<strong>¿Qué necesito para poder realizar mi aborto con pastillas)?</strong>',
@@ -658,12 +609,12 @@ a {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  margin-left: -15px;
+  margin-left: -22px;
 }
 
 .input-secction{
     display: block;
-    top: 535px;
+    top: 555px;
     width: 10%;
     height: 20%;
     background-color: rgba(0,0,0,.5);;
@@ -757,7 +708,7 @@ a {
 }
 
 .card-text-content{
-  height: 220px;
+  height: 210px;
 }
 
 .porto-button{
@@ -767,6 +718,10 @@ a {
 .footer-section{
   background: #1f1e1e;
   color: white;
+}
+
+.more-infro-buttom{ 
+  font-size: 15px;
 }
 
 @media (max-width: 766px) {
