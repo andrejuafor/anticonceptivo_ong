@@ -6,31 +6,32 @@
       </mdb-navbar-brand>
       <mdb-navbar-toggler>
         <mdb-navbar-nav center >
-          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('process')"><strong>Interrupcion Del Embarazo</strong></a></mdb-nav-item> 
-          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('calculadora-ref')"><strong>Calcula tu Tiempo de Embarazo</strong></a></mdb-nav-item>
+          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('process')"><strong>Interrupción del embarazo</strong></a></mdb-nav-item> 
+          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('calculadora-ref')"><strong>Calcula tu tiempo de embarazo</strong></a></mdb-nav-item>
           <mdb-nav-item><a class="porto-button" @click="scrollMeTo('quest')"><strong>Preguntas frecuentas</strong></a></mdb-nav-item>
+          <mdb-nav-item><a class="porto-button"><strong>Blog</strong></a></mdb-nav-item>
         </mdb-navbar-nav>
       </mdb-navbar-toggler>
     </mdb-navbar>
     <!-- :style="{marginTop: '60px'}" -->
-    <div style="margin-top: -60px;">
+    <div style="margin-top: -70px;">
       <mdb-edge-header style="height: 670px;">
         <div align="right" class="home-page-background">
           <mdb-col align="left" class="input-secction" sm="6">
             <p class="h5 contact-title" style="color: white;">Contáctanos</p>
             <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon.png">
-            <p class="phone-number">5614737334</p>
+            <p class="phone-number">&nbsp;&nbsp;5614737334</p>
           </mdb-col>
         </div>
         <div class="blue-bar">
-          <section style="background: #002B53; height: 19%; margin-top: -110px;">
-            <h2 class="blue-bar-title">Di sí al amor, pero con anticonceptivo dual</h2>
+          <section style="background: #002B53; height: 19%; margin-top: -90px;">
+            <h2 class="blue-bar-title">&nbsp;</h2>
             <p class="blue-bar-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </section>
         </div>
       </mdb-edge-header>
       <mdb-container>
-        <h2 class="text-center mt-5 font-weight-bold fl-porto" ref="process">Interrupcion Del Embarazo</h2>
+        <h2 class="text-center mt-5 font-weight-bold fl-porto" ref="process">Interrupción del embarazo</h2>
         <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
           <p>Antes de iniciar el proceso, considera lo siguiente</p>
         </mdb-col>
@@ -50,7 +51,7 @@
               <mdb-card-body>
                 <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-09.jpg"><strong style="font-size: 20px;">ASEGÚRATE DE QUE EL EMBARAZO ESTÁ DENTRO DEL ÚTERO</strong></mdb-card-title>
                 <mdb-card-text>Si además sientes dolor intenso que se concentra en un lado (bajo vientre derecho o izquierdo), 
-                  que se presenta de repente, con palpitaciones y debilidad <strong style="color: #00B3E8">¡requieres atención médica urgente y no puedes iniciar el proceso!</strong></mdb-card-text>
+                  que se presenta de repente, con palpitaciones y debilidad <strong style="color: #019934">¡requieres atención médica urgente y no puedes iniciar el proceso!</strong></mdb-card-text>
               </mdb-card-body>
             </mdb-card>
           </mdb-col>
@@ -69,18 +70,18 @@
             <mdb-card class="animated fadeInRight card-text-content-extra">
               <mdb-card-body>
                 <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-08.jpg"><strong style="font-size: 20px;">IMPORTANTE</strong></mdb-card-title>
-                <mdb-card-text><strong style="color: #00B3E8">¿Tienes colocado algún dispositivo intrauterino (DIU o SIU)?</strong><br>
+                <mdb-card-text><strong style="color: #019934">¿Tienes colocado algún dispositivo intrauterino (DIU o SIU)?</strong><br>
                 En caso de tener alguno, debes retirarlo antes de tomar las pastillas. <br>
-                <strong style="color: #00B3E8">¿Eres alérgica a la mifepristona o al misoprostol?</strong><br>
+                <strong style="color: #019934">¿Eres alérgica a la mifepristona o al misoprostol?</strong><br>
                 Si eres alérgica, no las tomes y considera otra opcion para tu interrupcion. <br>
-                <strong style="color: #00B3E8">¿Tienes problemas de coagulación, padeces anemia severa, asma no controlada o usas corticoides?</strong><br>
+                <strong style="color: #019934">¿Tienes problemas de coagulación, padeces anemia severa, asma no controlada o usas corticoides?</strong><br>
                 Para iniciar el proceso con las pastillas rquieres vigilancia médica.<br>
                 </mdb-card-text>
               </mdb-card-body>
             </mdb-card>
           </mdb-col>
         </mdb-row>
-        <h2 class="text-center mt-5 font-weight-bold">CONSULTA NUESTRA INFORMACIÓN</h2>
+        <h2 class="text-center mt-5 font-weight-bold">Consulta nuestra información</h2>
         <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
           <p>Descarga nuestras guías para obtener información util de cada estatus del proceso</p>
         </mdb-col> 
@@ -100,7 +101,7 @@
               </mdb-modal-header>
               <mdb-modal-body>
                 <p>
-                  <strong>INTERRUPCIÓN SEGURA DEL EMBARAZO CON PASTILLAS</strong>
+                  <strong>Interrupción segura del embarazo con pastillas</strong>
                   <br><br>
                   <strong>¿Sabías qué..?</strong>
                   <br><br>
@@ -377,7 +378,7 @@
             <br>
             <mdb-card-text>
               <strong style="font-size: 20px; font-weight: bold;">Semanas de embarazo:</strong>
-              <strong style="color: #00B3E8; font-size: 30px; font-weight: bold;">{{Results}}</strong><br>
+              <strong style="color: #019934; font-size: 30px; font-weight: bold;">{{Results}}</strong><br>
             </mdb-card-text>
           </mdb-col>
           <mdb-col md="5" class="mb-5">
@@ -385,7 +386,7 @@
           </mdb-col>
         </mdb-row>
         
-        <h2 class="text-center mt-5 font-weight-bold fl-porto" ref="quest">PREGUNTAS FRECUENTES</h2>
+        <h2 class="text-center mt-5 font-weight-bold fl-porto" ref="quest">Preguntas frecuentes</h2>
         <mdb-col md="8" class="mx-auto text-center mb-5" style="font-size: 15px;">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </mdb-col>
@@ -671,7 +672,7 @@ a {
 }
 
 .buttom-process{
-  background: #FF0000;
+  background: #019934;
   border: 0px;
   height: 100px;
   border-radius: 6px 6px 6px 6px;
@@ -691,7 +692,7 @@ a {
 
 .calculato-buttom{
   width: 15%; 
-  background: #00B3E8; 
+  background: #019934; 
   border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   -webkit-border-radius: 6px 6px 6px 6px;
