@@ -23,9 +23,11 @@
           </div>
           <div class="blue-bar-interior-wats">
             <p class="h5 contact-title">
-              Contáctanos <br />
-              <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon.png"><br>
-              5614737334
+              Contáctanos 
+            </p>
+              <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon.png">
+            <p class="h5 contact-number">
+              5588888888
             </p>
           </div>
         </div>
@@ -299,8 +301,8 @@ a {
 
 
 .whats-icon{
-  margin: 5px 0px;
-  max-width: 50px;
+  margin: 0px 50px 10px;
+  max-width: 60px;
 }
 
 .tablets-icon{
@@ -320,6 +322,12 @@ a {
 }
 
 .contact-title{
+  color: white; 
+  text-align:center; 
+  padding:3px 3px;
+}
+
+.contact-number{
   color: white; 
   text-align:center; 
   padding:3px 3px;
@@ -395,6 +403,17 @@ a {
 }
 
 @media (max-width: 766px) {
+  .home-page-background {
+    width: 100%;
+    height: 100%;
+    background: url('../../build/img/img-Marie/fondo.jpg');
+    background-size: 1000px 800px;
+    background-repeat: no-repeat;
+    height: 670px; 
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+  }
   .input-secction{
     width: 100%;
     top: 80px;
@@ -413,6 +432,12 @@ a {
   .blue-bar-title{
     padding: 10px 0px 0px 0px;
     font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .blue-bar-interior-wats{
+    padding: 5px 20px;
   }
   .blue-bar-subtitle{
     padding: 5px 0px 0px 0px;
@@ -434,20 +459,31 @@ a {
   }
   .contact-title{
     color: white; 
-    text-align:center; 
+    text-align: left; 
     padding:3px 3px;
   }
+  .contact-title{
+    color: white; 
+    text-align: left; 
+    padding:0px 3px;
+  }
+  .contact-number{
+    margin-top: -30px;
+    margin-left: 70px;
+    font-size:40px;
+  }
   .whats-icon{
-    margin: 5px 0px;
-    max-width: 40px;
+    margin: 0px -100px -25px -350px;
+    max-width: 60px;
   }
   .blue-bar{
     text-align: center;
+    display: inline-block;
   }
   .blue-bar-title{
-    padding: 15px 0px 0px 20px;
-    font-size: 21px;
-    text-align: left;
+    padding: 14px 20px 0px 20px;
+    font-size: 18px;
+    text-align: justify;
   }
   .blue-bar-subtitle{
     padding: 0px;
