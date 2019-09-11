@@ -35,188 +35,8 @@
         <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
           <p>Antes de iniciar el proceso, considera lo siguiente</p>
         </mdb-col>
-        <mdb-row>
-          <mdb-col md="6" class="mb-5">
-            <mdb-card class="animated fadeInLeft card-text-content">
-              <mdb-card-body style="height: 220px;" >
-                <mdb-card-title><img style="width: 8%; padding-right: 5px;" src="../../build/img/img-Marie/marie stopes landing-06.jpg"><strong style="font-size: 18px;">Antes de iniciar con el proceso. considera lo siguiente:</strong></mdb-card-title>
-                <mdb-card-text>
-                 <strong>1.Confirma que estás embarazada</strong>
-                  <br>
-                  ¿Cómo saber si estás embarazada?
-                  <br>
-                  <strong>Síntomas:</strong>
-                  <br>
-                  <mdb-icon icon="caret-right" /> Retraso del periodo menstrual <br>
-                  <mdb-icon icon="caret-right" /> Mayor sensibilidad en los senos <br>
-                  <a class="more-infro-buttom" style="color: green; " @click="showMoreInfo = true">Leer mas...</a>
-                </mdb-card-text>
-              </mdb-card-body>
-            </mdb-card>
-            <mdb-modal centered :show="showMoreInfo" @close="showMoreInfo = false">
-              <mdb-modal-header>
-                <mdb-modal-title><strong>Antes de iniciar con el proceso. considera lo siguiente</strong></mdb-modal-title>
-              </mdb-modal-header>
-              <mdb-modal-body> 
-                  <strong>1.Confirma que estás embarazada</strong>
-                  <br>
-                  ¿Cómo saber si estás embarazada?
-                  <br>
-                  <strong>Síntomas:</strong>
-                  <br><br>
-                  <li>
-                    <ul><mdb-icon icon="caret-right" /> Retraso del periodo menstrual</ul>
-                    <ul><mdb-icon icon="caret-right" /> Mayor sensibilidad en los senos</ul>
-                    <ul><mdb-icon icon="caret-right" /> Náuseas y/o vómito, especialmente al despertar </ul>
-                    <ul><mdb-icon icon="caret-right" /> Dolor de cabeza</ul>
-                    <ul><mdb-icon icon="caret-right" /> Cansancio</ul>
-                    <ul><mdb-icon icon="caret-right" /> Orinar con mucha frecuencia</ul>
-                  </li>
-                  <br>
-                  Poniendo atención a estos síntomas, puedes hacer una comparación después de haber usado las pastillas.
-                  <br>
-                  Puedes confirmar con una prueba de orina de farmacia. Para mayor certeza y para conocer la edad gestacional, puedes realizar un ultrasonido.
-                  <br>
-                  <br>
-                  <mdb-icon icon="check" class="fa-sm"/> Pensar en los síntomas que tienes antes de iniciar el proceso ayudará a confirmar que todo salió bien después de las pastillas.
-                  <br>
-                  <br>
-                  <strong>2. Asegúrate de que el embarazo está dentro del útero</strong>
-                  <br>
-                  <br>
-                  Si además sientes dolor intenso que se concentra en un lado (bajo vientre derecho o bajo vientre izquierdo), que se presenta de repente, con palpitaciones y debilidad ¡requieres atención médica urgente y no puedes iniciar el proceso!
-                  <br>
-                  <br>
-                  <mdb-icon icon="check" class="fa-sm"/> Confirma que NO se trate de un embarazo ectópico con un ultrasonido 
-                  <br><br>
-                  <strong>3. La edad gestacional </strong>
-                  <br> 
-                  ¿Cuántas semanas de embarazo tienes?
-                  <br><br>
-                  Puedes calcularlo de la siguiente forma: contar los días desde el primer día de la fecha de la última menstruación, el resultado en días divídelo entre siete para conocer las semanas. Si es posible, confirma con ultrasonido.
-                  <br><br>
-                  <mdb-icon icon="check" class="fa-sm"/> El uso del tratamiento se recomienda hasta la semana 9 de gestación.
-                  <br><br>
-                  <strong>4. Importante…</strong>
-                  <br><br>
-                  <strong>¿Tienes colocado algún dispositivo intrauterino (DIU o SIU)?</strong>
-                  <br>
-                  En caso de tener alguno, debes retirarlo antes de tomar las pastillas.
-                  <strong>¿Eres alérgica a la mifepristona o al misoprostol?</strong>
-                  <br>
-                  Si eres alérgica a las pastillas, no las tomes y considera otra opción para tu interrupción 
-                  <br>
-                  <strong>¿Tienes problemas de coagulación, padeces anemia severa, asma no controlada o usas corticoides?</strong>
-                  <br>
-                  Para iniciar el proceso con las pastillas requieres vigilancia médica 
-                  <br><br>
-                  <strong>Recomendación:</strong>
-                  <br>
-                  Tener un espacio seguro y cómodo para llevar a cabo tu interrupción es importante para que te sientas tranquila, procura tener un baño cerca y suficientes toallas regulares (no nocturnas) para monitorear el sangrado. Estar acompañada de alguien en quien confías y que pueda apoyarte, facilitará el proceso. 
-                  <br><br>
-                  <mdb-icon icon="check" class="fa-sm"/> Identifica algún centro de salud cercano para acudir en caso de emergencia.
-                <!-- <img style="width: 100%;" src="../../build/img/img-Marie/marie stopes landing-03.jpg"> -->
-              </mdb-modal-body>
-              <mdb-modal-footer>
-                <mdb-btn color="#FF0000" @click.native="showMoreInfo = false">Cerrar</mdb-btn>
-              </mdb-modal-footer>
-            </mdb-modal>
-          </mdb-col>
-          <mdb-col md="6" class="mb-5">
-            <mdb-card class="animated fadeInRight card-text-content">
-              <mdb-card-body>
-                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-09.jpg"><strong style="font-size: 18px;">Aborto con Mifepristona + Misoprostol</strong></mdb-card-title>
-                <mdb-card-text>
-                  <strong> Paso 1.</strong>Tragar una tableta de 200 mg de Mifepristona con agua. Esta es dosis única. La Mifepristona bloquea e impide el acceso de la progesterona, que es la hormona que permite mantener el embarazo.
-                  <br>
-                  <strong>Paso 2.</strong>Tragar 2 tabletas de Ibuprofeno de 400 mg cada una 1 hora ANTES del Misoprostol. Recuerda que la primera toma de Ibuprofeno es entre la toma de Mifepristona y Misoprostol.
-                  <a class="more-infro-buttom" style="color: green;" @click="showMoreInfo2 = true">Leer mas...</a>
-                </mdb-card-text>
-                </mdb-card-body>
-            </mdb-card>
-            <mdb-modal centered :show="showMoreInfo2" @close="showMoreInfo2 = false">
-              <mdb-modal-header>
-                <mdb-modal-title>Aborto con Mifepristona + Misoprosto</mdb-modal-title>
-              </mdb-modal-header>
-              <mdb-modal-body>
-                <mdb-card-text>
-                  <strong> Paso 1.</strong>Tragar una tableta de 200 mg de Mifepristona con agua. Esta es dosis única. La Mifepristona bloquea e impide el acceso de la progesterona, que es la hormona que permite mantener el embarazo.
-                  <br><br>
-                  <strong>Paso 2.</strong>Tragar 2 tabletas de Ibuprofeno de 400 mg cada una 1 hora ANTES del Misoprostol. Recuerda que la primera toma de Ibuprofeno es entre la toma de Mifepristona y Misoprostol. El Ibuprofeno sirve para aminorar los cólicos.
-                  <br><br>
-                  <strong>Paso 3.</strong>Colocar 4 tabletas de Misoprostol, dos entre el cachete y la encía superior izquierda, y dos entre el cachete y la encía superior derecha. Dejar pasar 30 minutos para que se absorban. Cuando pasen los 30 minutos, si aún quedan restos de las patillas, puedes pasarlos con agua.
-                  <br><br>
-                  <strong>Paso 4.</strong>Para ayudar a disminuir las molestias, puedes continuar tomando Ibuprofeno durante 3 días más, 2 tabletas de 400 mg cada una, cada 8 horas.
-                </mdb-card-text>
-              </mdb-modal-body>
-              <mdb-modal-footer>
-                <mdb-btn color="#FF0000" @click.native="showMoreInfo2 = false">Cerrar</mdb-btn>
-              </mdb-modal-footer>
-            </mdb-modal>
-          </mdb-col>
-        </mdb-row>
-        <mdb-row>
-          <mdb-col md="6" class="mb-5">
-            <mdb-card class="animated fadeInLeft card-text-content">
-              <mdb-card-body>
-                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-07.jpg"><strong style="font-size: 18px;">Lo más frecuente…</strong></mdb-card-title>
-                <mdb-card-text>Es que la expulsión ocurra en las primeras 4 horas, sin embargo se trata de un proceso en el que el útero se irá limpiando con el paso de los días , es por esta razón que el sangrado puede extenderse de 14 hasta 30 días, aproximadamente. También es importante que recuerdes cómo te sentías antes de tomar las pastillas, piensa en los síntomas que se han ido días después de usarlas.
-               <a class="more-infro-buttom" style="color: green;" @click="showMoreInfo3 = true">Leer mas...</a>
-                </mdb-card-text>
-                </mdb-card-body>
-            </mdb-card>
-            <mdb-modal centered :show="showMoreInfo3" @close="showMoreInfo3 = false">
-              <mdb-modal-header>
-                <mdb-modal-title>Lo más frecuente…</mdb-modal-title>
-              </mdb-modal-header>
-              <mdb-modal-body>
-                <mdb-card-text>
-                  <strong>Lo más frecuente…</strong>
-                  <br>
-                  es que la expulsión ocurra en las primeras 4 horas, sin embargo se trata de un proceso en el que el útero se irá limpiando con el paso de los días , es por esta razón que el sangrado puede extenderse de 14 hasta 30 días, aproximadamente. También es importante que recuerdes cómo te sentías antes de tomar las pastillas, piensa en los síntomas que se han ido días después de usarlas.
-                  <br><br>
-                  Por ejemplo: <br>
-                  <mdb-icon icon="caret-right" /> Ausencia de sangrado (esto es lo primero que notarás diferente). <br>
-                  <mdb-icon icon="caret-right" /> EL DÍA QUE COLOQUES EL MISOPROSTOL, EL SANGRADO VOLVERÁ<br>
-                  <mdb-icon icon="caret-right" /> Dolor de senos<br>
-                  <mdb-icon icon="caret-right" /> Náuseas y/o vómito<br> 
-                  <mdb-icon icon="caret-right" /> Dolor de Cabeza<br>
-                  <mdb-icon icon="caret-right" /> Cansancio y/o sueño<br> 
-                  <br>
-                  A los 5 días de haber usado las pastillas, notarás que estos síntomas van desapareciendo.
-                  <br><br>
-                  <strong>Después de 14 días…</strong><br>
-                  Con ayuda de la prueba de embarazo, podrás confirmar la interrupción, pero si te sientes más tranquila, puedes corroborar con ultrasonido.
-                  <br><br>
-                  <strong>¿Cómo usar prueba de orina?</strong><br> 
-                  1. Coloca un poco de orina en un recipiente desechable <br>
-                  2. Una vez abierta tu prueba, sujeta con tus dedos el extremo  de color y no toques el extremo blanco.<br>
-                  3. Sumerge en la orina el extremo blanco hasta la línea de color durante un minuto<br>
-                  4. Retira la prueba de la orina y espera un minuto mientras arroja el resultado <br>
-                  <br><br>
-                  <strong>Resultado</strong> <br>
-                  Si solo aparece una línea, tu prueba es <strong>negativa</strong><br>
-                  Si observas <strong>dos líneas</strong>, el resultado es <strong>positivo</strong>. En caso de que sea positivo, comprueba con un ultrasonido. Si el resultado definitivo es positivo, es necesario evaluar una segunda dosis de medicamento o hacer un procedimiento de aspiración.
-                </mdb-card-text>
-              </mdb-modal-body>
-              <mdb-modal-footer>
-                <mdb-btn color="#FF0000" @click.native="showMoreInfo3 = false">Cerrar</mdb-btn>
-              </mdb-modal-footer>
-            </mdb-modal>
-          </mdb-col>
-          <mdb-col md="6" class="mb-5">
-            <mdb-card class="animated fadeInRight card-text-content-extra card-text-content">
-              <mdb-card-body>
-                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../build/img/img-Marie/marie stopes landing-08.jpg"><strong style="font-size: 18px;">¡Datos de alarma!</strong></mdb-card-title>
-                <mdb-card-text ><br>
-                  <mdb-icon icon="caret-right" /> Continuación del embarazo. <br>
-                  <mdb-icon icon="caret-right" /> Presencia de alguna infección <br>
-                  <mdb-icon icon="caret-right" /> Sangrado mayor al esperad <br>
-                </mdb-card-text>
-              </mdb-card-body>
-            </mdb-card>
-          </mdb-col>
-        </mdb-row>
+        <!-- Sección de interrupción -->
+        <pm-interrupcion></pm-interrupcion>
         <h2 class="text-center mt-5 font-weight-bold">Consulta nuestra información</h2>
         <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
           <p>Descarga nuestras guías para obtener información util de cada estatus del proceso</p>
@@ -305,69 +125,39 @@
           </mdb-col>
         </mdb-row>
         <mdb-row>
-          <!-- INICIA CALCILADORA -->
           <h2 class="font-weight-bold fl-porto mt-5 calculadora-titulo" ref="calculadora-ref" style="width: 100%;">Calcula tu Tiempo de Embarazo</h2>
           <mdb-col md="7" class="mb-5">
-            <p style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <select class="calculator" v-model="selectedDay">
-              <option value="">Día</option>
-              <option v-for="option in optionsDays" v-bind:key="option.value">{{option.text}}</option>
-            </select>
-            <select class="calculator" v-model="selectedMonth">
-                <option value="">Mes</option>
-                <option v-for="option in optionsMonth" v-bind:key="option.valor" :value="option.valor">{{option.text}}</option>
-            </select>
-            <select class="calculator" v-model="selectedYear">
-                <option value="">Año</option>
-                <option v-for="option in optionsYear" v-bind:key="option.value">{{option.text}}</option>
-            </select>
-            <button class="calculato-buttom" @click="calculator()">Calcular</button>
-            <br>
-            <br>
-            <mdb-card-text>
-              <strong style="font-size: 20px; font-weight: bold;">Semanas de embarazo:</strong>
-              <strong style="color: #019934; font-size: 30px; font-weight: bold;">{{Results}}</strong><br>
-            </mdb-card-text>
+            <!-- Sección Calculadora -->
+            <pm-calculadora></pm-calculadora>
           </mdb-col>
           <mdb-col md="5" class="mb-5">
             <img style="width: 80%;" src="../../build/img/img-Marie/marie stopes landing-05.jpg">
           </mdb-col>
         </mdb-row>
-        
         <h2 class="text-center mt-5 font-weight-bold fl-porto" ref="quest">Preguntas frecuentes</h2>
         <mdb-col md="8" class="mx-auto text-center mb-5" style="font-size: 15px;">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </mdb-col>
         <mdb-accordion :panes="panes"/>
       </mdb-container>
     </div>
     <mdb-footer class="footer-section">
-      <p class="footer-copyright mb-0 py-3 text-center">
-        Términos y condiciones de uso  
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="10" height="10" viewBox="0 0 172 172" style=" fill:#000000; margin-bottom: 2px; padding: 2px;">
-          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-            <path d="M0,172v-172h172v172z" fill="none">
-            </path>
-            <g fill="#ffffff">
-              <path d="M86,165.12c-43.62952,0 -79.12,-35.49392 -79.12,-79.12c0,-43.62608 35.49048,-79.12 79.12,-79.12c43.62952,0 79.12,35.49392 79.12,79.12c0,43.62608 -35.49048,79.12 -79.12,79.12z">
-              </path>
-            </g>
-          </g>
-        </svg>
-         Politicas de privacidad
-      </p>
+      <pm-footer></pm-footer>
     </mdb-footer>
   </div>
 </template>
 
 <script>
 import { mdbContainer, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbCol, mdbRow, mdbIcon, mdbNavbarBrand, mdbNavbar, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbEdgeHeader, mdbFooter, mdbCard, mdbCardImage, mdbCardTitle, mdbCardText, mdbCardBody, animateOnScroll, mdbAccordion} from 'mdbvue';
-import moment from 'moment';
-import axios from 'axios';
+import PmFooter from '../components/Views/Footer.vue';
+import PmInterrupcion from '../components/Views/Interrupcion.vue';
+import PmCalculadora from '../components/Views/Calculadora.vue';
 
 export default {
   name: 'HomePage',
   components: {
+    PmFooter,
+    PmInterrupcion,
+    PmCalculadora,
     mdbContainer,
     mdbCol,
     mdbRow,
@@ -402,14 +192,10 @@ export default {
       selectedYear: '',
       diasMes: 31,
       Results: '',
-      url:'http://localhost:8080/static/img/marie%20stopes%20landing-03.31fcfac.jpg',
       showModal: false,
       showModal2: false,
       showModal3: false,
       showModal4: false,
-      showMoreInfo: false,
-      showMoreInfo2: false,
-      showMoreInfo3: false,
       panes: [
         {
           title: '<strong>¿Qué necesito para poder realizar mi aborto con pastillas)?</strong>',
@@ -452,71 +238,18 @@ export default {
   directives: {
     animateOnScroll
   },
-  created(){
-    for (let i=1; i<=31; i++) {
-      this.optionsDays.push({ text:i, value:i});
-    }
-    this.optionsMonth = [
-      {text:'Enero', valor: '01'},
-      {text:'Febrero', valor: '02'},
-      {text:'Marzo', valor: '03'},
-      {text:'Abril', valor: '04'},
-      {text:'Mayo', valor: '05'},
-      {text:'Junio', valor: '06'},
-      {text:'Julio', valor: '07'},
-      {text:'Agosto', valor: '08'},
-      {text:'Septiembre', valor: '09'},
-      {text:'Octubre', valor: '10'},
-      {text:'Noviembre', valor: '11'},
-      {text:'Diciembre', valor: '12'}
-    ];
-    // let ahora = moment().format('YYYY-MM-DD');
-    let diferenciaMeses = moment().subtract(9, 'months')
-      .format('YYYY');
-    let anioActual = moment().format('YYYY');
-    if (diferenciaMeses < anioActual){
-      this.optionsYear.push({text:diferenciaMeses, value:diferenciaMeses});
-    }
-    this.optionsYear.push({text:anioActual, value:anioActual});
-  },
+  
   methods: {
     scrollMeTo(refName) {
       var element = this.$refs[refName];
       var top = element.offsetTop;
       window.scrollTo(0, top);
-    },
-    calculator(){
-      if (this.selectedDay !== '' && this.selectedMonth !== '' && this.selectedYear !== ''){
-        let fechaSel = moment(`${this.selectedYear}-${this.selectedMonth}-${this.selectedDay}`, 'YYYY-MM-DD');
-        let fechaValida = fechaSel.isValid();
-        if (fechaValida === false){
-          this.Results = 'Debes seleccionar una fecha válida.';  
-        } else {
-          let ahora = moment();
-          let diferencia = ahora.diff(fechaSel, 'weeks');
-          this.Results = `${diferencia}`;
-        }
-      } else {
-        this.Results = 'Debes seleccionar una fecha válida.';
-      }
-    },
-    forceFileDownload(response){
-      const url = window.URL.createObjectURL(new Blob([response.data]));
-      const link = document.createElement('a');
-      link.href = url;
-      link.setAttribute('download', 'file.png');
-      document.body.appendChild(link);
-      link.click();
-    },
-    downloadWithAxios(){
-      axios({method: 'get', url: this.url, responseType: 'arraybuffer'}).then(response => {this.forceFileDownload(response);})
-        .catch(() => console.log('error occured'));}
+    }
   }
 };
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
   font-weight: normal;
@@ -564,23 +297,6 @@ a {
   width: 100%;
 }
 
-.send-buttom{
-  width: 100%; 
-  background: #00C5FF; 
-  border-radius: 6px 6px 6px 6px;
-  -moz-border-radius: 6px 6px 6px 6px;
-  -webkit-border-radius: 6px 6px 6px 6px;
-  border: 0px solid #000000;
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  padding: 5px;
-}
-.demo-section{
-  width: 50%;
-  height: 80%;
-  background: #000000;
-}
 
 .whats-icon{
   margin: 5px 0px;
@@ -637,63 +353,10 @@ a {
   font-weight: bold;
 }
 
-.calculator{
-  background: white;
-  padding: 10px 30px 10px 10px;
-  border-radius: 6px 6px 6px 6px;
-  -moz-border-radius: 6px 6px 6px 6px;
-  -webkit-border-radius: 6px 6px 6px 6px;
-}
-
-.calculato-buttom{
-  width: 15%; 
-  background: #019934; 
-  border-radius: 6px 6px 6px 6px;
-  -moz-border-radius: 6px 6px 6px 6px;
-  -webkit-border-radius: 6px 6px 6px 6px;
-  border: 0px solid #000000;
-  font-size: 15px;
-  color: white;
-  font-weight: bold;
-  padding: 10px;
-}
-
-.buttom-question{
-  background: white;
-  border: 0px;
-  height: 40px;
-  border-radius: 6px 6px 6px 6px;
-  -moz-border-radius: 6px 6px 6px 6px;
-  -webkit-border-radius: 6px 6px 6px 6px;
-  font-weight: bold;
-}
-
-.buttom-question:hover{
-  background: #FF0000;
-  color: white;
-}
-
-.buttom-question:active{
-  background: #FF0000;
-  color: white;
-}
-
 .form-section{
   border: #000000;
 }
 
-.send-buttom2{
-  width: 20%; 
-  background: #00C5FF; 
-  border-radius: 6px 6px 6px 6px;
-  -moz-border-radius: 6px 6px 6px 6px;
-  -webkit-border-radius: 6px 6px 6px 6px;
-  border: 0px solid #000000;
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  padding: 5px;
-}
 
 .form-extra{
   padding: 0% 0% 20% 1%;;
@@ -716,10 +379,6 @@ a {
   padding: 45px 5px 0px 30px;
   font-weight: normal;
   font-size: 25px;
-}
-
-.card-text-content{
-  height: 210px;
 }
 
 .porto-button{
@@ -759,22 +418,9 @@ a {
     padding: 5px 0px 0px 0px;
     font-size: 10px;
   }
-  .calculato-buttom{
-    width: 100%;
-    margin-top: 10px;
-  }
-  .card-text-content{
-    height: 300px;
-  }
-  .card-text-content-extra{
-    height: 350px;
-  }
-  .calculadora-titulo{
-    padding-left: 15px;
-  }
   .footer-section{
-  background: #1f1e1e;
-  color: white;
+    background: #1f1e1e;
+    color: white;
   }
 }
 
@@ -806,22 +452,9 @@ a {
   .blue-bar-subtitle{
     padding: 0px;
   }
-  .calculato-buttom{
-    width: 100%;
-    margin-top: 10px;
-  }
-  .card-text-content{
-    height: 300px;
-  }
-  .card-text-content-extra{
-    height: 350px;
-  }
-  .calculadora-titulo{
-    padding-left: 15px;
-  }
   .footer-section{
-  background: #1f1e1e;
-  color: white;
+    background: #1f1e1e;
+    color: white;
   }
   .phone-number{
     font-size: 40px;
