@@ -1,8 +1,8 @@
 <template>
   <div>
-    <mdb-navbar id="main-navbar" class="main-navbar2" dark position="top" color="black"  scrolling :scrollingOffset="20">
+    <mdb-navbar id="main-navbar" class="main-navbar2" light position="top" color="white"  scrolling :scrollingOffset="20">
       <mdb-navbar-brand to="/" waves class="font-weight-bold">
-        <img class="header-logo-navbar" src="../../build/img/img-Marie/logo_page.png">
+        <img class="header-logo-navbar" src="../../build/img/img-Marie/logo_page_green.png">
       </mdb-navbar-brand>
       <mdb-navbar-toggler>
         <mdb-navbar-nav center >
@@ -23,11 +23,11 @@
           </div>
           <div class="blue-bar-interior-wats">
             <p class="h5 contact-title">
-              Contáctanos 
+              <!-- Contáctanos  --> &nbsp;
             </p>
-              <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon.png">
+              <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon_blank.png">
             <p class="h5 contact-number">
-              5588888888
+              <!-- XXXXXXXXXX --> &nbsp;
             </p>
           </div>
         </div>
@@ -41,7 +41,7 @@
         <pm-interrupcion></pm-interrupcion>
         <h2 class="text-center mt-5 font-weight-bold">Consulta nuestra información</h2>
         <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
-          <p>Descarga nuestras guías para obtener información util de cada estatus del proceso</p>
+          <p>Descarga las guías para obtener información detallada de cada paso de proceso.</p>
         </mdb-col> 
         <mdb-row>
           <a name="lancha" id="lancha" class="fadeIn"></a>
@@ -200,7 +200,7 @@ export default {
       showModal4: false,
       panes: [
         {
-          title: '<strong>¿Qué necesito para poder realizar mi aborto con pastillas)?</strong>',
+          title: '<strong>¿Qué necesito para poder realizar mi aborto con pastillas?</strong>',
           content: 'Antes de realizarte un aborto debes tener claridad, de si efectivamente estás embarazada, la cantidad de semanas de gestación y descartar la posibilidad de un embarazo ectópico; un embarazo ectópico es aquel que se ubica fuera del útero. Este tipo de embarazo es muy poco común (no más del 1%). Se puede sospechar de un embarazo ectópico, si se observan síntomas como dolor repentino intenso y si persisten en el bajo vientre, normalmente a uno de los dos lados, sangrado vaginal, mareos o desmayos. Para corroborar con exactitud las semanas de embarazo y si el embarazo es ectópico, debes de realizarte un ultrasonido. <br><br> Si sospechas que estás embarazada y no puedes acceder al ultrasonido por razones económicas, puedes optar a realizarte un prueba de embarazo, que están a la venta en las farmacias (no importa la marca, solo hay que fijarse en la fecha de caducidad) que permiten certificar el embarazo, pero no la cantidad de semanas del mismo, o también otra opción es acudir a un laboratorio o clínica para pedir una prueba llamada Fracción Beta Gonadotrofina Coriónica Humana (Beta HCG), es importante pedirla cuantitativa para que salga la cantidad exacta de semanas de embarazo.<br> <br> FUM (Fecha de la Última Menstruación): Otra forma que es muy efectiva y sin costo, es acudir a la memoria para tener un estimado de la cantidad de semanas de gestación, es necesario calcular desde el primer día de la última menstruación o regla y ese total dividirlo por 7. No obstante, hay que tener en cuenta que este método solo le sirve a las mujeres que han tenido una menstruación regular el último año, pues puede tener un margen de error de aproximadamente dos semanas. <br><br> El procedimiento está contraindicado en el caso de que padezcas anemia severa o problemas de coagulación, como también en el hecho de haberte practicado una cesárea en los últimos 30 días; en caso de que tengas puesto un DIU (Dispositivo Intrauterino) o SIU (Sistema Intrauterino) estos deben de ser retirado antes de aplicar el método.'
         }, {
           title: '<strong>¿Qué elementos y materiales son necesarios para comenzar con la interrupción con medicamentos?<strong>',
@@ -390,6 +390,7 @@ a {
 }
 
 .porto-button{
+  color: #019934 !important;
   margin-right: 10px;
 }
 
@@ -406,13 +407,14 @@ a {
   .home-page-background {
     width: 100%;
     height: 100%;
-    background: url('../../build/img/img-Marie/fondo.jpg');
-    background-size: 1000px 800px;
+    background: url(/static/img/fondo.676f4bb.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 670px; 
+    height: 487px;
     position: relative;
-    background-attachment: fixed;
-    background-position: center;
+    background-attachment: inherit;
+    margin-top: 94px;
+    background-position: 0 67px;
   }
   .input-secction{
     width: 100%;

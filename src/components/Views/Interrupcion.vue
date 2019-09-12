@@ -4,7 +4,7 @@
             <mdb-col md="6" class="mb-5">
                 <mdb-card class="animated fadeInLeft card-text-content">
                     <mdb-card-body style="height: 220px;" >
-                    <mdb-card-title><img style="width: 8%; padding-right: 5px;" src="../../../build/img/img-Marie/marie stopes landing-06.jpg"><strong style="font-size: 18px;">Antes de iniciar con el proceso. considera lo siguiente:</strong></mdb-card-title>
+                    <mdb-card-title><img style="width: 8%; padding-right: 5px;" src="../../../build/img/img-Marie/1.png"><strong style="font-size: 18px;">Antes de iniciar con el proceso. considera lo siguiente:</strong></mdb-card-title>
                     <mdb-card-text>
                         <strong>1.Confirma que estás embarazada</strong>
                         <br>
@@ -90,7 +90,7 @@
             <mdb-col md="6" class="mb-5">
                 <mdb-card class="animated fadeInRight card-text-content">
                     <mdb-card-body>
-                    <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../../build/img/img-Marie/marie stopes landing-09.jpg"><strong style="font-size: 18px;">Aborto con Mifepristona + Misoprostol</strong></mdb-card-title>
+                    <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../../build/img/img-Marie/2.png"><strong style="font-size: 18px;">Aborto con Mifepristona + Misoprostol</strong></mdb-card-title>
                     <mdb-card-text>
                         <strong> Paso 1.</strong>Tragar una tableta de 200 mg de Mifepristona con agua. Esta es dosis única. La Mifepristona bloquea e impide el acceso de la progesterona, que es la hormona que permite mantener el embarazo.
                         <br>
@@ -124,7 +124,7 @@
             <mdb-col md="6" class="mb-5">
             <mdb-card class="animated fadeInLeft card-text-content">
                 <mdb-card-body>
-                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../../build/img/img-Marie/marie stopes landing-07.jpg"><strong style="font-size: 18px;">Lo más frecuente…</strong></mdb-card-title>
+                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../../build/img/img-Marie/3.png"><strong style="font-size: 18px;">Lo más frecuente…</strong></mdb-card-title>
                 <mdb-card-text>Es que la expulsión ocurra en las primeras 4 horas, sin embargo se trata de un proceso en el que el útero se irá limpiando con el paso de los días , es por esta razón que el sangrado puede extenderse de 14 hasta 30 días, aproximadamente. También es importante que recuerdes cómo te sentías antes de tomar las pastillas, piensa en los síntomas que se han ido días después de usarlas.
                 <a class="more-infro-buttom" style="color: green;" @click="showMoreInfo3 = true">Leer mas...</a>
                 </mdb-card-text>
@@ -172,7 +172,7 @@
             <mdb-col md="6" class="mb-5">
             <mdb-card class="animated fadeInRight card-text-content-extra card-text-content">
                 <mdb-card-body>
-                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../../build/img/img-Marie/marie stopes landing-08.jpg"><strong style="font-size: 18px;">¡Datos de alarma!</strong></mdb-card-title>
+                <mdb-card-title><img style="width: 8%; padding-right: 8px;" src="../../../build/img/img-Marie/4.png"><strong style="font-size: 18px;">¡Datos de alarma!</strong></mdb-card-title>
                 <mdb-card-text ><br>
                     <mdb-icon icon="caret-right" /> Continuación del embarazo. <br>
                     <mdb-icon icon="caret-right" /> Presencia de alguna infección <br>
