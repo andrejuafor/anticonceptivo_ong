@@ -1,5 +1,7 @@
 <template>
     <div>
+        <h3>Esta calculadora es para saber cuántas semanas de embarazo tienes aproximadamente. En las casillas coloca la fecha de inicio de tu último periodo menstrual.</h3>
+        <br />
         <select class="calculator" v-model="selectedDay">
             <option value="">Día</option>
             <option v-for="option in optionsDays" v-bind:key="option.value">{{option.text}}</option>
@@ -22,8 +24,13 @@
     </div>
 </template>
 <script>
+import {mdbCardText} from 'mdbvue';
 import moment from 'moment';
 export default {
+  name: "Calculadora",
+  components:{
+    mdbCardText
+  },
   data() {
     return {
       optionsDays:[],
@@ -84,6 +91,10 @@ export default {
 </script>
 
 <style scoped>
+h3{
+  margin-top: 15px;
+  font-weight: bolder;
+}
 .calculator {
   background: white;
   padding: 10px 30px 10px 10px;

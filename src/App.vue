@@ -18,10 +18,6 @@ html{
 	min-height:100vh;
 	justify-content: space-between;
 }
-.main-navbar2{
-  opacity: 0.8;
-  filter: alpha(opacity=50);
-}
 .active{
   background-color: rgba(255, 255, 255, 0.1);
 }

@@ -20,7 +20,7 @@
                 </mdb-card>
                 <mdb-modal centered :show="showMoreInfo" @close="showMoreInfo = false">
                     <mdb-modal-header>
-                    <mdb-modal-title><strong>Antes de iniciar con el proceso. considera lo siguiente</strong></mdb-modal-title>
+                    <mdb-modal-title><strong>Antes de iniciar con el proceso, considera lo siguiente</strong></mdb-modal-title>
                     </mdb-modal-header>
                     <mdb-modal-body> 
                         <strong>1.Confirma que estás embarazada</strong>
@@ -67,6 +67,7 @@
                         <strong>¿Tienes colocado algún dispositivo intrauterino (DIU o SIU)?</strong>
                         <br>
                         En caso de tener alguno, debes retirarlo antes de tomar las pastillas.
+                        <br>
                         <strong>¿Eres alérgica a la mifepristona o al misoprostol?</strong>
                         <br>
                         Si eres alérgica a las pastillas, no las tomes y considera otra opción para tu interrupción 
@@ -177,9 +178,28 @@
                     <mdb-icon icon="caret-right" /> Continuación del embarazo. <br>
                     <mdb-icon icon="caret-right" /> Presencia de alguna infección <br>
                     <mdb-icon icon="caret-right" /> Sangrado mayor al esperad <br>
+                    <a class="more-infro-buttom" style="color: green;" @click="showMoreInfo4 = true">Leer mas...</a>
                 </mdb-card-text>
                 </mdb-card-body>
             </mdb-card>
+            <mdb-modal centered :show="showMoreInfo4" @close="showMoreInfo4 = false">
+                <mdb-modal-header>
+                <mdb-modal-title>¡Datos de Alarma!</mdb-modal-title>
+                </mdb-modal-header>
+                <mdb-modal-body>
+                <mdb-card-text>
+                    <mdb-icon icon="caret-right" /> Continuación del embarazo. <br>
+                    <mdb-icon icon="caret-right" /> Presencia de alguna infección <br>
+                    <mdb-icon icon="caret-right" /> Sangrado mayor al esperar <br><br>
+                    Debes saber que, en caso de que presentes alguna señal de alarma, es tu derecho solicitar atención médica. <b>NO</b> existe ningún examen clínico o sanguíneo que detecte el uso de las pastillas.<br>
+                    Las complicaciones que pudieran presentarse son consideradas como <b>emergencia médica</b>.<br>
+                    La regulación y leyes en materia de aborto obligan a los prestadores y  prestadoras de salud a atenderte. <br>
+                </mdb-card-text>
+                </mdb-modal-body>
+                <mdb-modal-footer>
+                <mdb-btn color="#FF0000" @click.native="showMoreInfo4 = false">Cerrar</mdb-btn>
+                </mdb-modal-footer>
+            </mdb-modal>
             </mdb-col>
         </mdb-row>
     </div>
@@ -219,6 +239,7 @@ export default {
       showMoreInfo: false,
       showMoreInfo2: false,
       showMoreInfo3: false,
+      showMoreInfo4: false,
     };
   }
 };

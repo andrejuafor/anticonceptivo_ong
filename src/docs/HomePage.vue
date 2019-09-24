@@ -1,6 +1,6 @@
 <template>
   <div>
-    <mdb-navbar id="main-navbar" class="main-navbar2" light position="top" color="white"  scrolling :scrollingOffset="20">
+    <mdb-navbar id="main-navbar" light position="top" color="white"  scrolling :scrollingOffset="20">
       <mdb-navbar-brand to="/" waves class="font-weight-bold">
         <img class="header-logo-navbar" src="../../build/img/img-Marie/logo_page_green.png">
       </mdb-navbar-brand>
@@ -21,13 +21,13 @@
               Todas las mexicanas tienen el derecho al acceso a interrumpir legalmente su embarazo, dependiendo de las causales de cada estado
             </h2>
           </div>
-          <div class="blue-bar-interior-wats">
+          <div class="52ue-bar-interior-wats">
             <p class="h5 contact-title">
-              <!-- Contáctanos  --> &nbsp;
+      <!-- Contáctanos  --> &nbsp;
             </p>
               <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon_blank.png">
             <p class="h5 contact-number">
-              <!-- XXXXXXXXXX --> &nbsp;
+    <!-- XXXXXXXXXX --> &nbsp;
             </p>
           </div>
         </div>
@@ -35,13 +35,11 @@
       <mdb-container>
         <h2 class="text-center mt-5 font-weight-bold fl-porto" ref="process">Interrupción del embarazo</h2>
         <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
-          <p>Antes de iniciar el proceso, considera lo siguiente</p>
         </mdb-col>
         <!-- Sección de interrupción -->
         <pm-interrupcion></pm-interrupcion>
-        <h2 class="text-center mt-5 font-weight-bold">Consulta nuestra información</h2>
         <mdb-col md="10" class="mx-auto text-center text-muted mb-5">
-          <p>Descarga las guías para obtener información detallada de cada paso de proceso.</p>
+          <p class="font-weight-bold">Descarga las guías para obtener información detallada de cada paso de proceso.</p>
         </mdb-col> 
         <mdb-row>
           <a name="lancha" id="lancha" class="fadeIn"></a>
@@ -220,11 +218,11 @@ export default {
         },
         {
           title: '<strong>¿Puedo abortar con misoprostol si me encuentro lactando?<strong>',
-          content: ''
+          content: 'Después de tomar los medicamentos espera 24 horas para volver a amamantar. Se recomienda que antes de tomar los medicamentos, extraigas toda la leche y la reserves en caso de necesitarla. '
         },
         {
           title: '<strong>¿Se puede realizar el procedimiento más de una ocasión?<strong>',
-          content: ''
+          content: 'Lo puedes realizar las veces que sea necesario. La interrupción con medicamentos es el que más se asemeja a un aborto espontáneo (natural). La Organización Mundial de la Salud dice que este es un procedimiento seguro para las mujeres.'
         },
         {
           title: '<strong>¿Puedo beber o fumar alcohol durante el procedimiento?<strong>',
@@ -375,7 +373,7 @@ a {
   bottom: 0; 
   display:flex; 
   justify-content: space-between;
-  background-color: rgba(0, 43, 83, 0.9);
+  background-color: rgba(1, 153, 52, 0.9);
 }
 
 .blue-bar-interior-wats{
