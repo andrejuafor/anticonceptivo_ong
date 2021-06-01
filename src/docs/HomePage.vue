@@ -8,8 +8,8 @@
         <mdb-navbar-nav center >
           <mdb-nav-item><a class="porto-button" @click="scrollMeTo('process')"><strong>Interrupción del embarazo</strong></a></mdb-nav-item> 
           <mdb-nav-item><a class="porto-button" @click="scrollMeTo('calculadora-ref')"><strong>Calcula tu tiempo de embarazo</strong></a></mdb-nav-item>
-          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('quest')"><strong>Preguntas frecuentas</strong></a></mdb-nav-item>
-          <mdb-nav-item><a class="porto-button"><strong>Blog</strong></a></mdb-nav-item>
+          <mdb-nav-item><a class="porto-button" @click="scrollMeTo('quest')"><strong>Preguntas frecuentes</strong></a></mdb-nav-item>
+          <mdb-nav-item><a class="porto-button" href="http://blog.tengounretraso.mx/" target="_blank"><strong>Blog</strong></a></mdb-nav-item>
         </mdb-navbar-nav>
       </mdb-navbar-toggler>
     </mdb-navbar>
@@ -23,11 +23,13 @@
           </div>
           <div class="52ue-bar-interior-wats">
             <p class="h5 contact-title">
-      <!-- Contáctanos  --> &nbsp;
+              Contáctanos
             </p>
-              <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon_blank.png">
+              <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5215544764589">
+              <img class="whats-icon" src="../../build/img/img-Marie/whatsappicon.png">
+              </a>
             <p class="h5 contact-number">
-    <!-- XXXXXXXXXX --> &nbsp;
+              <span class="whatsapp-link" data-whatsapp="5215544764589"><a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5215544764589">5544764589</a></span>
             </p>
           </div>
         </div>
@@ -284,6 +286,11 @@ a {
   color: #42b983;
 }
 
+span .whatsapp-link {
+  text-decoration: none;
+  color: white;
+}
+
 .home-page-background {
   width: 100%;
   height: 100%;
@@ -374,6 +381,7 @@ a {
   display:flex; 
   justify-content: space-between;
   background-color: rgba(1, 153, 52, 0.9);
+  width: 100%;
 }
 
 .blue-bar-interior-wats{
